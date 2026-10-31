@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://moamryehia.github.io/sitemap.xml

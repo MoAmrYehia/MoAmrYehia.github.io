@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Signet Insights</title>
+<link>https://moamryehia.github.io/blog.html</link>
+<description>Applied AI writing by Mohamed Amr</description>
+<language>en</language>
+<atom:link href="https://moamryehia.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>Human review belongs in document AI from day one</title>
+<link>https://moamryehia.github.io/blog/human-review-document-ai-from-day-one.html</link>
+<guid>https://moamryehia.github.io/blog/human-review-document-ai-from-day-one.html</guid>
+<pubDate>Tue, 15 Sep 2026 04:00:00 GMT</pubDate>
+<category>Document AI</category>
+<description>Why document AI projects in healthcare, insurance and government should design human review first, and how per-field confidence thresholds make it work.</description>
+</item>
+<item>
+<title>Seven questions to ask before buying an enterprise AI tool</title>
+<link>https://moamryehia.github.io/blog/questions-before-buying-enterprise-ai.html</link>
+<guid>https://moamryehia.github.io/blog/questions-before-buying-enterprise-ai.html</guid>
+<pubDate>Fri, 28 Aug 2026 04:00:00 GMT</pubDate>
+<category>AI strategy</category>
+<description>A practical checklist for evaluating AI vendors: testing on your own documents, data residency, citations, human oversight, monitoring and exit plans.</description>
+</item>
+</channel>
+</rss>

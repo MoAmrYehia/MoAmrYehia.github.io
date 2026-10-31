@@ -1,791 +1,1118 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-
+<!doctype html>
+<html lang="en">
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Signet AI | Consultancy in Dubai for LLM, RAG and Document AI</title>
+<meta name="description" content="Signet is the AI consultancy of Mohamed Amr in Dubai. LLM, retrieval (RAG), document AI and computer vision for government, real estate, healthcare, banking, insurance and manufacturing, with human review built in.">
+<meta name="author" content="Mohamed Amr">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0D1522">
+<meta name="color-scheme" content="dark">
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Replace moamryehia.github.io with your real domain before uploading -->
+<link rel="canonical" href="https://moamryehia.github.io/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Signet Insights" href="https://moamryehia.github.io/feed.xml">
 
-<meta name="description" content="Name of your web site">
-<meta name="author" content="Marketify">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Signet AI Consultancy">
+<meta property="og:title" content="Signet AI | Consultancy in Dubai">
+<meta property="og:description" content="LLM, RAG, document AI and computer vision for government, real estate, healthcare, banking, insurance and manufacturing teams in the UAE.">
+<meta property="og:url" content="https://moamryehia.github.io/">
+<meta property="og:image" content="https://moamryehia.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_AE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Signet AI | Consultancy in Dubai">
+<meta name="twitter:description" content="LLM, RAG, document AI and computer vision for regulated industries, with human review built in.">
+<meta name="twitter:image" content="https://moamryehia.github.io/og-image.png">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
 
-<title>Mohamed Amr</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://moamryehia.github.io/#business",
+      "name": "Signet",
+      "alternateName": ["Signet AI", "Signet AI Consultancy"],
+      "url": "https://moamryehia.github.io/",
+      "logo": "https://moamryehia.github.io/favicon.svg",
+      "image": "https://moamryehia.github.io/og-image.png",
+      "description": "AI and machine learning consultancy in Dubai: AI strategy and vendor evaluation, document AI, retrieval augmented generation, computer vision, ML engineering on AWS and AI governance.",
+      "email": "M.amryehia@gmail.com",
+      "telephone": "+971585872638",
+      "address": { "@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE" },
+      "areaServed": [{ "@type": "Country", "name": "United Arab Emirates" }, "Remote"],
+      "founder": { "@id": "https://moamryehia.github.io/#person" },
+      "knowsAbout": ["Generative AI", "Large language models", "Retrieval augmented generation", "Document AI", "Computer vision", "Defect detection", "Satellite image super resolution", "AWS Bedrock", "Amazon SageMaker", "Machine learning", "AI governance"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://moamryehia.github.io/#person",
+      "name": "Mohamed Amr",
+      "jobTitle": "Founder and AI Consultant",
+      "worksFor": { "@id": "https://moamryehia.github.io/#business" },
+      "url": "https://moamryehia.github.io/",
+      "sameAs": ["https://www.linkedin.com/in/mamryehia/", "https://github.com/MoAmrYehia", "https://m-amr-social.medium.com/", "https://twitter.com/M_AmrYehia"],
+      "homeLocation": { "@type": "Place", "name": "Dubai, United Arab Emirates" },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "University of Leeds" },
+        { "@type": "CollegeOrUniversity", "name": "Ain Shams University" }
+      ],
+      "hasCredential": [
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "AWS Certified Machine Learning - Specialty", "recognizedBy": { "@type": "Organization", "name": "Amazon Web Services" } },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "AWS Certified Data Analytics - Specialty", "recognizedBy": { "@type": "Organization", "name": "Amazon Web Services" } },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "AWS Certified Database - Specialty", "recognizedBy": { "@type": "Organization", "name": "Amazon Web Services" } },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "AWS Certified Solutions Architect - Associate", "recognizedBy": { "@type": "Organization", "name": "Amazon Web Services" } },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "AWS Certified Cloud Practitioner", "recognizedBy": { "@type": "Organization", "name": "Amazon Web Services" } },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "TensorFlow Developer Certificate", "recognizedBy": { "@type": "Organization", "name": "Google" } },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "certification", "name": "Microsoft Azure AI Fundamentals", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Which industries do you work with?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Government and public services, real estate and land, healthcare, banking and fintech, insurance, and manufacturing: sectors where documents are dense, data is sensitive and decisions need human review." } },
+        { "@type": "Question", "name": "Do you only work in Dubai?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Signet is based in Dubai and works in person across the UAE. Remote engagements are welcome elsewhere." } },
+        { "@type": "Question", "name": "What does a first engagement usually look like?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A short scoping phase: we pick one workflow, agree how success will be measured, and decide whether to build, buy or wait. You get a written recommendation either way." } },
+        { "@type": "Question", "name": "Can you help us evaluate AI vendors?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. I write RFP requirements, define evaluation criteria and test vendor claims against your own documents and data, including security, privacy and service levels." } }
+      ]
+    }
+  ]
+}
+</script>
 
-<!-- STYLES -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-<link rel="stylesheet" type="text/css" href="css/plugins.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
-<!-- /STYLES -->
+<style>
+:root{
+  --bg:#0D1522;
+  --bg-2:#101A2A;
+  --panel:#142036;
+  --panel-2:#18263F;
+  --line:#22324A;
+  --text:#E7ECF3;
+  --muted:#9AA7BB;
+  --accent:#5CC8C0;
+  --accent-soft:rgba(92,200,192,.12);
+  --amber:#E9C46A;
+  --mark:rgba(233,196,106,.26);
+  --flag:#F2A65A;
+  --flag-mark:rgba(242,166,90,.24);
+  --serif:"Newsreader","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --sans:"IBM Plex Sans","Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  --wrap:1160px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 var(--sans);text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-underline-offset:.18em}
+a:hover{color:#8BE0DA}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+::selection{background:var(--mark);color:#fff}
+.skip{position:absolute;left:-999px;top:0;background:var(--accent);color:var(--bg);padding:.6rem 1rem;z-index:10}
+.skip:focus{left:1rem;top:1rem}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 1.5rem}
+.ico{width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 
+h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;margin:0;color:#F4F7FB}
+h1{font-size:clamp(2.35rem,4.6vw,3.9rem);line-height:1.06;letter-spacing:-.02em}
+h2{font-size:clamp(1.75rem,3vw,2.45rem);line-height:1.15}
+h3{font-size:1.35rem;line-height:1.25;font-weight:500}
+p{margin:0 0 1rem}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:5;background:rgba(13,21,34,.82);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+.site-header.scrolled{border-bottom-color:var(--line)}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:66px}
+.brand{display:flex;align-items:center;gap:.6rem;color:var(--text);text-decoration:none}
+.brand b{font-family:var(--serif);font-size:1.4rem;font-weight:500;letter-spacing:-.01em}
+.brand small{color:var(--muted);font-size:.85rem;padding-left:.6rem;border-left:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:1.6rem}
+.nav a{color:var(--muted);text-decoration:none;font-size:.95rem;transition:color .2s}
+.nav a:hover{color:var(--text)}
+
+.btn{display:inline-flex;align-items:center;gap:.5rem;font:500 1rem/1.2 var(--sans);text-decoration:none;padding:.85rem 1.35rem;border-radius:4px;border:1px solid var(--accent);background:var(--accent);color:#06221F;transition:background .2s,border-color .2s,color .2s,transform .2s}
+.btn .ico{width:18px;height:18px}
+.btn:hover{background:#86DDD7;border-color:#86DDD7;color:#06221F}
+.btn:active{transform:translateY(1px)}
+.btn.quiet{background:transparent;color:var(--text);border-color:#34465F}
+.btn.quiet:hover{border-color:var(--accent);color:var(--accent)}
+.nav a.btn{color:#06221F;padding:.5rem 1rem}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding:clamp(3.5rem,8vw,6.5rem) 0 clamp(3.5rem,7vw,5.5rem)}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(154,167,187,.16) 1px,transparent 1px);background-size:26px 26px;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 70% 40%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse 70% 60% at 70% 40%,#000 20%,transparent 75%);pointer-events:none}
+.hero::after{content:"";position:absolute;width:620px;height:620px;right:-140px;top:-40px;border-radius:50%;background:radial-gradient(circle,rgba(92,200,192,.16),transparent 65%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.hero .wrap > *{min-width:0}
+.lede{font-size:1.2rem;color:var(--muted);max-width:36em;margin:1.5rem 0 2rem}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem}
+.where{margin-top:2rem;font-size:.95rem;color:var(--muted);display:flex;gap:.5rem;align-items:flex-start}
+.where .ico{width:18px;height:18px;margin-top:.2rem;color:var(--accent)}
+
+@media (prefers-reduced-motion:no-preference){
+  .hero-copy > *{animation:rise .8s var(--ease) both}
+  .hero-copy > :nth-child(2){animation-delay:.12s}
+  .hero-copy > :nth-child(3){animation-delay:.24s}
+  .hero-copy > :nth-child(4){animation-delay:.36s}
+  .specimen{animation:rise 1s var(--ease) .3s both}
+  .hero::after{animation:drift 16s ease-in-out infinite alternate}
+  @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+  @keyframes drift{from{transform:translate(0,0)}to{transform:translate(-90px,70px)}}
+}
+
+/* Specimen */
+.specimen{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:8px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.02) inset}
+.tabs{position:relative;display:flex;gap:.15rem;padding:.55rem .55rem 0;border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{position:relative;z-index:1;flex:none;display:inline-flex;align-items:center;gap:.45rem;font:500 .85rem/1 var(--sans);color:var(--muted);background:none;border:0;padding:.65rem .75rem .8rem;cursor:pointer;border-radius:6px 6px 0 0;transition:color .2s,background-color .2s}
+.tab .ico{width:16px;height:16px}
+.tab:hover{color:var(--text);background:rgba(255,255,255,.035)}
+.tab[aria-pressed="true"]{color:var(--text)}
+.tab[aria-pressed="true"] .ico{color:var(--accent)}
+.indicator{position:absolute;left:0;bottom:-1px;height:2px;width:0;background:var(--line);transition:transform .38s var(--ease),width .38s var(--ease);pointer-events:none}
+.indicator i{display:block;height:100%;background:var(--accent);transform-origin:left}
+.indicator i.run{animation:fill var(--cycle,7s) linear forwards}
+@keyframes fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+.stage{transition:opacity .35s ease}
+.stage.fast{transition-duration:.14s}
+.stage.out{opacity:0}
+.doc{position:relative;overflow:hidden;padding:1.25rem 1.5rem 1.2rem;font-family:var(--serif);font-size:1.04rem;line-height:1.75;color:#C9D2DF;border-bottom:1px dashed var(--line);min-height:10.5rem}
+.doc-title{font-family:var(--sans);font-size:.82rem;color:var(--muted);margin-bottom:.45rem;display:flex;gap:.45rem;align-items:center}
+.doc-title .ico{width:15px;height:15px}
+.scan{position:absolute;left:0;right:0;top:0;height:46px;background:linear-gradient(180deg,transparent,rgba(92,200,192,.14) 70%,rgba(92,200,192,.55) 100%);border-bottom:1px solid rgba(92,200,192,.7);transform:translateY(-60px);pointer-events:none;opacity:0}
+.scanning .scan{animation:scan 1.3s var(--ease) forwards}
+.scanning.quick .scan{animation-duration:.75s}
+@keyframes scan{0%{opacity:1;transform:translateY(-60px)}90%{opacity:1}100%{opacity:0;transform:translateY(190px)}}
+.hl{background-image:linear-gradient(var(--mark),var(--mark));background-repeat:no-repeat;background-size:0% 100%;padding:0 .12em;border-radius:2px;color:inherit;transition:background-size .5s var(--ease),color .3s}
+.hl.on{background-size:100% 100%;color:#fff}
+.hl.review{background-image:linear-gradient(var(--flag-mark),var(--flag-mark))}
+
+.record{padding:.9rem 1.5rem 1.2rem;font-family:var(--mono);font-size:.84rem;min-height:14.2rem}
+.record-head{display:flex;justify-content:space-between;font-family:var(--sans);font-size:.82rem;color:var(--muted);margin-bottom:.4rem}
+.field{display:grid;grid-template-columns:9.5rem 1fr auto;gap:.75rem;padding:.42rem 0;border-top:1px solid rgba(34,50,74,.7);align-items:baseline;opacity:.18;transition:opacity .4s var(--ease)}
+.record-head + .field{border-top:0}
+.field.on{opacity:1}
+.k{color:var(--muted)}
+.v{color:var(--amber);overflow-wrap:anywhere}
+.c{color:var(--accent);font-size:.8rem}
+.field.needs .v,.field.needs .c{color:var(--flag)}
+.field.needs .v::after{content:"Sent to reviewer";display:block;font-family:var(--sans);font-size:.76rem;color:var(--flag);margin-top:.15rem;opacity:0;transition:opacity .4s .25s}
+.field.needs.on .v::after{opacity:1}
+figcaption{font-size:.82rem;color:var(--muted)}
+.specimen > figcaption{padding:.75rem 1.5rem;border-top:1px solid var(--line);background:var(--bg-2);border-radius:0 0 8px 8px}
+
+/* Organizations strip */
+.orgs{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg-2);padding:1.6rem 0}
+.orgs .wrap{display:flex;align-items:center;gap:2rem}
+.orgs h2{flex:none;font-family:var(--sans);font-size:.9rem;font-weight:500;color:var(--muted);white-space:nowrap;line-height:1.35}
+.marquee{position:relative;flex:1;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;width:max-content}
+.logos{display:flex;align-items:center;gap:3.2rem;list-style:none;margin:0;padding:0 1.6rem}
+.logo{font-family:var(--serif);font-size:1.3rem;color:#8C99AD;white-space:nowrap;transition:color .25s}
+.logo:hover{color:var(--text)}
+.logo img{height:30px;width:auto;display:block;opacity:.75;filter:grayscale(1) brightness(1.6)}
+.logo:hover img{opacity:1}
+@media (prefers-reduced-motion:no-preference){
+  .track{animation:marquee 38s linear infinite}
+  .marquee:hover .track,.marquee:focus-within .track{animation-play-state:paused}
+  @keyframes marquee{to{transform:translateX(-50%)}}
+}
+@media (prefers-reduced-motion:reduce){
+  .track{width:auto}.logos{flex-wrap:wrap;gap:1rem 2.4rem}.logos[aria-hidden]{display:none}
+}
+
+/* Sections */
+section{padding:clamp(3.5rem,7vw,5.5rem) 0;border-top:1px solid var(--line)}
+.orgs + section{border-top:0}
+.alt{background:var(--bg-2)}
+.split{display:grid;grid-template-columns:1fr 2fr;gap:clamp(1.5rem,5vw,4.5rem)}
+.split > header{align-self:start}
+.split > header p{color:var(--muted);margin-top:1rem;max-width:22em}
+@media (min-width:900px){.split > header{position:sticky;top:100px}}
+.intro{max-width:38em;color:var(--muted);margin-top:1rem}
+
+.badge{display:grid;place-items:center;width:44px;height:44px;border-radius:10px;background:var(--accent-soft);color:var(--accent);border:1px solid rgba(92,200,192,.18);transition:background .3s,transform .3s var(--ease)}
+
+/* Services */
+.services{list-style:none;margin:0;padding:0}
+.services li{display:grid;grid-template-columns:44px 1fr;gap:1.2rem;padding:1.6rem 0;border-top:1px solid var(--line)}
+.services li:first-child{border-top:0;padding-top:0}
+.services li:hover .badge{background:rgba(92,200,192,.22);transform:translateY(-2px)}
+.services p{color:var(--muted);margin:.5rem 0 .6rem;max-width:40em}
+.tags{font-size:.88rem;color:#C9D2DF}
+.tags b{font-weight:500;color:var(--muted)}
+
+/* Industries */
+.ind-list{list-style:none;margin:2.5rem 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.ind-list li{background:var(--bg-2);padding:1.5rem 1.4rem 1.6rem;transition:background .3s}
+.ind-list li:hover{background:var(--panel)}
+.ind-list li:hover .badge{background:rgba(92,200,192,.22)}
+.ind-list h3{font-size:1.25rem;margin-top:1rem}
+.ind-list p{color:var(--muted);margin:.4rem 0 0;font-size:.97rem}
+
+/* Approach */
+.steps{list-style:none;margin:2.5rem 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;counter-reset:step}
+.steps li{position:relative;counter-increment:step;padding-top:1.4rem}
+.steps li::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:var(--line)}
+.steps li::after{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:var(--accent);transform-origin:left;transform:scaleX(1)}
+.step-top{display:flex;align-items:center;gap:.75rem;margin-bottom:.9rem}
+.step-top span{font-size:.86rem;color:var(--accent);font-weight:500}
+.steps p{color:var(--muted);margin:.5rem 0 0}
+
+/* Work */
+.work{list-style:none;margin:0;padding:0}
+.work li{display:grid;grid-template-columns:168px 1fr;gap:1.6rem;padding:1.5rem 0;border-top:1px solid var(--line);align-items:start}
+.work li:first-child{border-top:0;padding-top:0}
+.thumb{margin:0;border-radius:8px;overflow:hidden;border:1px solid var(--line);background:#111C2E;aspect-ratio:160/110;transition:border-color .3s,transform .4s var(--ease)}
+.thumb svg{display:block;width:100%;height:100%}
+.work li:hover .thumb{border-color:rgba(92,200,192,.55);transform:translateY(-2px)}
+.sector{display:inline-flex;align-items:center;gap:.4rem;font-size:.85rem;color:var(--accent);font-weight:500;margin-bottom:.35rem}
+.sector .ico{width:15px;height:15px}
+.work h3{font-size:1.22rem}
+.work p{color:var(--muted);margin:.35rem 0 0}
+
+/* Insights (cards are generated by Blog Studio) */
+.insights-head{display:flex;align-items:flex-end;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+.insights-head .btn .ico{width:18px;height:18px}
+.posts{list-style:none;margin:2.2rem 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.post-card a{display:flex;flex-direction:column;height:100%;text-decoration:none;color:inherit;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:border-color .3s,transform .4s var(--ease),box-shadow .4s}
+.post-card a:hover{border-color:rgba(92,200,192,.5);transform:translateY(-3px);box-shadow:0 24px 40px -28px rgba(0,0,0,.7)}
+.post-cover{aspect-ratio:40/21;background:#111C2E;border-bottom:1px solid var(--line);overflow:hidden}
+.post-cover img,.post-cover svg{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s var(--ease)}
+.post-card a:hover .post-cover img,.post-card a:hover .post-cover svg{transform:scale(1.03)}
+.post-body{display:flex;flex-direction:column;flex:1;padding:1.2rem 1.3rem 1.3rem}
+.post-meta{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem .8rem;font-size:.82rem;color:var(--muted)}
+.post-tag{color:var(--accent);font-weight:500}
+.post-body h3{font-weight:500;font-size:1.3rem;line-height:1.25;margin:.6rem 0 .5rem}
+.post-body p{color:var(--muted);font-size:.95rem;margin:0 0 1rem}
+.read{margin-top:auto;font-size:.9rem;font-weight:500;color:var(--accent)}
+.posts-empty{color:var(--muted);margin-top:2rem}
+@media (max-width:1000px){.posts{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.posts{grid-template-columns:1fr}}
+
+/* About */
+.portrait{margin:1.6rem 0 0;max-width:240px}
+.portrait .frame{aspect-ratio:4/5;border-radius:10px;border:1px solid var(--line);background:radial-gradient(circle at 50% 38%,#1C2D48,#111B2C 70%);display:grid;place-items:center;overflow:hidden;position:relative}
+.portrait .frame img{width:100%;height:100%;object-fit:cover;display:block}
+.portrait .initials{font-family:var(--serif);font-size:3.6rem;color:#C9D2DF;letter-spacing:.02em}
+.portrait .frame:not(:has(img))::after{content:"";position:absolute;left:14%;right:14%;bottom:10%;height:8px;border-radius:4px;background:var(--amber);opacity:.8}
+.portrait figcaption{margin-top:.6rem}
+.about-text p{max-width:38em;color:#C9D2DF}
+.facts{list-style:none;padding:0;margin:2rem 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.facts li{display:flex;gap:.75rem;align-items:flex-start;padding:1rem;border:1px solid var(--line);border-radius:8px;background:var(--bg-2);font-size:.95rem;color:var(--muted)}
+.facts .ico{color:var(--accent);margin-top:.1rem}
+.facts b{display:block;color:var(--text);font-weight:500}
+
+/* Credentials */
+.creds{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:2.5rem}
+.cred li b a{color:var(--text);text-decoration:none;border-bottom:1px solid rgba(92,200,192,.5)}
+.cred li b a:hover{color:var(--accent)}
+.cred{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:1.5rem}
+.cred-head{display:flex;align-items:center;gap:.9rem;margin-bottom:1.1rem}
+.cred-head h3{font-size:1.3rem}
+.cred ul{list-style:none;margin:0;padding:0}
+.cred li{padding:.7rem 0;border-top:1px solid var(--line);font-size:.97rem}
+.cred li:first-child{border-top:0;padding-top:0}
+.cred li b{display:block;font-weight:500;color:var(--text)}
+.cred li span{display:block;color:var(--muted);font-size:.88rem;margin-top:.1rem}
+
+/* FAQ */
+.faq details{border-top:1px solid var(--line);padding:1.1rem 0}
+.faq details:first-of-type{border-top:0;padding-top:0}
+.faq summary{cursor:pointer;font-family:var(--serif);font-size:1.3rem;list-style:none;display:flex;justify-content:space-between;gap:1rem;color:#F4F7FB}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--sans);color:var(--accent);font-size:1.4rem;line-height:1;transition:transform .3s var(--ease)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{color:var(--muted);margin:.7rem 0 0;max-width:40em}
+@media (prefers-reduced-motion:no-preference){.faq details[open] p{animation:rise .4s var(--ease)}}
+
+/* Contact and booking */
+.contact{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--bg) 0%,#0F2530 100%)}
+.contact::before{content:"";position:absolute;width:760px;height:760px;left:30%;bottom:-460px;border-radius:50%;background:radial-gradient(circle,rgba(92,200,192,.18),transparent 65%);pointer-events:none}
+.contact-grid{position:relative;display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.contact-grid > *{min-width:0}
+.contact h2{max-width:14em}
+.contact .lead{color:var(--muted);max-width:32em;margin-top:1rem}
+.contact .actions{margin-top:1.8rem}
+.reach{list-style:none;margin:2.2rem 0 0;padding:0}
+.reach li{display:flex;align-items:center;gap:.8rem;padding:.75rem 0;border-top:1px solid var(--line);color:var(--muted)}
+.reach li:first-child{border-top:0}
+.reach .ico{color:var(--accent)}
+.reach a{color:var(--text);text-decoration:none}
+.reach a:hover{color:var(--accent)}
+.booking{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;scroll-margin-top:90px}
+.book-head{display:flex;gap:1rem;align-items:center;padding:1.2rem 1.4rem;border-bottom:1px solid var(--line)}
+.book-head h3{font-size:1.3rem}
+.book-head p{margin:.15rem 0 0;color:var(--muted);font-size:.92rem}
+.cal-slot{position:relative;min-height:440px}
+.cal-slot.live{min-height:700px;background:#fff}
+.cal-slot .calendly-inline-widget{min-width:280px;height:700px}
+.cal-placeholder{padding:1.4rem;display:grid;grid-template-columns:1fr 1fr;gap:1.4rem;align-items:start}
+.mini-cal{border:1px solid var(--line);border-radius:8px;padding:1rem;background:var(--bg-2)}
+.mini-cal-head{display:flex;justify-content:space-between;font-size:.88rem;color:var(--text);margin-bottom:.7rem}
+.mini-cal-head span:last-child{color:var(--muted)}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;font-size:.75rem;text-align:center;color:#5E6C83}
+.days b{font-weight:500;color:var(--muted);padding-bottom:.2rem}
+.days i{font-style:normal;padding:.42rem 0;border-radius:50%}
+.days i.av{color:var(--accent);background:var(--accent-soft);font-weight:500}
+.days i.sel{color:#06221F;background:var(--accent);font-weight:600}
+.slots{display:grid;gap:.5rem}
+.slots-label{font-size:.88rem;color:var(--text);margin-bottom:.2rem}
+.slot{border:1px solid #34465F;border-radius:6px;padding:.6rem .8rem;text-align:center;font-size:.9rem;color:var(--accent)}
+.slot.picked{background:var(--accent);border-color:var(--accent);color:#06221F}
+.mini-cal,.slots{opacity:.55;pointer-events:none;user-select:none}
+.cal-note{grid-column:1 / -1;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;padding-top:1.2rem;border-top:1px solid var(--line);color:var(--muted);font-size:.93rem}
+.cal-note p{margin:0;max-width:26em}
+
+footer{background:#0A111C;color:#7D8A9E;font-size:.88rem;padding:1.5rem 0 2rem;border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem}
+footer a{color:var(--muted)}
+
+/* Scroll reveal */
+@media (prefers-reduced-motion:no-preference){
+  .js .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+  .js .reveal.in{opacity:1;transform:none}
+  .js .steps li::after{transform:scaleX(0);transition:transform .9s var(--ease)}
+  .js .steps.in li::after{transform:scaleX(1)}
+  .js .steps.in li:nth-child(2)::after{transition-delay:.35s}
+  .js .steps.in li:nth-child(3)::after{transition-delay:.7s}
+}
+
+@media (max-width:1000px){
+  .ind-list,.creds{grid-template-columns:repeat(2,1fr)}
+  .contact-grid{grid-template-columns:1fr}
+}
+@media (max-width:900px){
+  .hero .wrap,.split{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .nav a:not(.btn){display:none}
+  .orgs .wrap{flex-direction:column;align-items:flex-start;gap:1rem}
+  .marquee{width:100%}
+  .facts{grid-template-columns:1fr}
+  .portrait{max-width:200px}
+}
+@media (max-width:640px){
+  .ind-list,.creds{grid-template-columns:1fr}
+  .work li{grid-template-columns:1fr;gap:.9rem}
+  .thumb{max-width:320px}
+  .field{grid-template-columns:7.8rem 1fr auto;gap:.5rem}
+  .doc,.record{padding-left:1.1rem;padding-right:1.1rem}
+  .doc{min-height:12.5rem}
+  .brand small{display:none}
+  .cal-placeholder{grid-template-columns:1fr}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
 </head>
-
 <body>
+<!-- Icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h4"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.3 15.3L21 21"/><path d="M8 9h5M8 12h3"/></symbol>
+    <symbol id="i-nodes" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="8" r="2.5"/><circle cx="10" cy="18" r="2.5"/><path d="M8.4 6.4l7.2 1.2M7 8.3l2.2 7.3M16.5 10.1l-4.9 5.9"/></symbol>
+    <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 7h14"/><path d="M5 7l-3 6.5h6zM19 7l-3 6.5h6z"/></symbol>
+    <symbol id="i-gov" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10M9.5 21V10M14.5 21V10M19 21V10M2.5 8L12 3l9.5 5z"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18M6 21V5l6-2 6 2v16M9.5 8h1M13.5 8h1M9.5 12h1M13.5 12h1M10.5 21v-4h3v4"/></symbol>
+    <symbol id="i-health" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="M12 8v8M8 12h8"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19M6 15h4"/></symbol>
+    <symbol id="i-umbrella" viewBox="0 0 24 24"><path d="M3 12a9 9 0 0118 0z"/><path d="M12 12v6.5a2 2 0 01-4 0"/></symbol>
+    <symbol id="i-factory" viewBox="0 0 24 24"><path d="M2.5 21h19M3.5 21V11l5 3.2V11l5 3.2V5h3.5l1.5 16"/><path d="M7 18h2M12 18h2"/></symbol>
+    <symbol id="i-satellite" viewBox="0 0 24 24"><path d="M9.5 9.5l5 5"/><rect x="8" y="8" width="6" height="6" rx="1" transform="rotate(45 11 11)"/><path d="M5.5 5.5l-3 3 3 3 3-3zM15.5 15.5l-3 3 3 3 3-3z"/><path d="M17 3a4 4 0 014 4"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+    <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5.5 9.5A1.7 1.7 0 006 21h12a1.7 1.7 0 001.5-2.5L14 9V3"/><path d="M7.5 15h9"/></symbol>
+    <symbol id="i-trend" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></symbol>
+    <symbol id="i-badge" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 13.8L7 21l5-2.5 5 2.5-1.5-7.2"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/><path d="M22 9v6"/></symbol>
+    <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.5-3.5 3.2-5.5 6.5-5.5s6 2 6.5 5.5"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14.2c2.6.2 4.4 2 4.9 4.8"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6l8.5 7 8.5-7"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0114 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+    <symbol id="i-profile" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="12" cy="10" r="3"/><path d="M7 18c.8-2.3 2.7-3.5 5-3.5s4.2 1.2 5 3.5"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M8 14h2M12 14h2M8 17h2"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18h10.5a4 4 0 00.6-7.95A6 6 0 006.3 9.2 4.5 4.5 0 007 18z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-4 1.3-4-2-6-2.5M15 21v-3.4a3 3 0 00-.8-2.3c2.7-.3 5.5-1.3 5.5-6a4.6 4.6 0 00-1.3-3.2 4.3 4.3 0 00-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 00-6 0C6.5 2.6 5.5 2.9 5.5 2.9a4.3 4.3 0 00-.1 3.2A4.6 4.6 0 004.1 9.3c0 4.6 2.8 5.7 5.5 6a3 3 0 00-.8 2.3V21"/></symbol>
+    <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13.5 6.5l4 4"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></symbol>
+    <symbol id="i-wave" viewBox="0 0 24 24"><path d="M2 12h2l2-5 3 10 3-14 3 16 3-11 2 4h2"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+  </defs>
+</svg>
 
-<!-- WRAPPER ALL -->
-<div class="arlo_tm_wrapper_all">
+<a class="skip" href="#main">Skip to content</a>
 
-	<div id="arlo_tm_popup_blog">
-		<div class="container">
-			<div class="inner_popup scrollable"></div>
-		</div>
-		<span class="close"><a href="#"></a></span>
-	</div>
+<header class="site-header" id="siteHeader">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Signet home">
+      <svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="#142036" stroke="#2C3F5C" stroke-width="2"/><circle cx="32" cy="32" r="21" fill="none" stroke="#5CC8C0" stroke-width="2" stroke-dasharray="3 4"/><rect x="17" y="27" width="30" height="10" rx="2" fill="#E9C46A" opacity=".3"/><path d="M21 32l7 7 15-15" stroke="#E9C46A" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <b>Signet</b><small>AI consultancy</small>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#industries">Industries</a>
+      <a href="#work">Work</a>
+      <a href="#insights">Insights</a>
+      <a href="#about">About</a>
+      <a class="btn" href="#book">Book a call</a>
+    </nav>
+  </div>
+</header>
 
-	<!-- PRELOADER -->
-	<div class="arlo_tm_preloader">
-		<div class="spinner_wrap">
-			<div class="spinner"></div>
-		</div>
-	</div>
-	<!-- /PRELOADER -->
+<main id="main">
+  <div class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-copy">
+        <h1>Applied AI for teams whose documents and decisions carry real weight.</h1>
+        <p class="lede">Signet helps government, real estate, healthcare, banking and insurance organizations in the UAE scope, build and govern LLM, retrieval and document AI systems, with human review designed in from day one.</p>
+        <div class="actions">
+          <a class="btn" href="#book"><svg class="ico" aria-hidden="true"><use href="#i-calendar"/></svg>Book a consultation</a>
+          <a class="btn quiet" href="#services">See services</a>
+        </div>
+        <p class="where"><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span>Led by Mohamed Amr in Dubai. More than six years of AI and ML delivery on AWS and Azure.</span></p>
+      </div>
 
-	<!-- MOBILE MENU -->
-	<div class="arlo_tm_mobile_header_wrap">
-		<div class="main_wrap">
-			<div class="logo">
-				<img src="img/logo/mobile_logo.png" alt="" />
-			</div>
-			<div class="arlo_tm_trigger">
-				<div class="hamburger hamburger--collapse-r">
-					<div class="hamburger-box">
-						<div class="hamburger-inner"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="arlo_tm_mobile_menu_wrap">
-   			<div class="mob_menu">
-				<ul class="anchor_nav">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#services">Skills</a></li>
-					<li><a href="#portfolio">Competitions</a></li>
-					<li><a href="#news">News</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><hr style="width:80%;text-align:left;margin-left:0"></li>
-					<li><a href="https://m-amr-social.medium.com/" target="_blank">Blogs</a></li>
+      <figure class="specimen" id="specimen" aria-label="Examples of documents turned into structured records, by industry">
+        <div class="tabs" id="tabs"></div>
+        <div class="stage" id="stage">
+          <div class="doc" id="doc">
+            <div class="doc-title"><svg class="ico" aria-hidden="true"><use href="#i-doc"/></svg><span id="docTitle">Motor claim note, received by email</span></div>
+            <p id="docBody" style="margin:0">Policyholder reports a rear collision on <span class="hl on">14 March 2026</span> at <span class="hl on">Sheikh Zayed Road, Dubai</span>. Policy <span class="hl on">MTR-20418-77</span>. Garage estimate <span class="hl on">AED 8,450</span>. Other driver <span class="hl review on">may have been at fault</span>, police report to follow.</p>
+            <div class="scan" aria-hidden="true"></div>
+          </div>
+          <div class="record" id="record" aria-hidden="true">
+            <div class="record-head"><span>Structured record</span><span>Confidence</span></div>
+            <div class="field on"><span class="k">incident_date</span><span class="v">2026-03-14</span><span class="c">0.98</span></div>
+            <div class="field on"><span class="k">location</span><span class="v">Sheikh Zayed Rd</span><span class="c">0.95</span></div>
+            <div class="field on"><span class="k">policy_no</span><span class="v">MTR-20418-77</span><span class="c">0.99</span></div>
+            <div class="field on"><span class="k">estimate_aed</span><span class="v">8450</span><span class="c">0.97</span></div>
+            <div class="field needs on"><span class="k">liability</span><span class="v">third party?</span><span class="c">0.61</span></div>
+          </div>
+        </div>
+        <figcaption>Illustrative examples with invented data. Low-confidence fields go to a person, not straight into your systems.</figcaption>
+      </figure>
+    </div>
+  </div>
 
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- /MOBILE MENU -->
+  <div class="orgs" aria-labelledby="orgs-title">
+    <div class="wrap">
+      <h2 id="orgs-title">Experience delivered at</h2>
+      <div class="marquee" tabindex="0" aria-label="Organizations">
+        <div class="track">
+          <ul class="logos">
+            <!-- To use official logos, replace the text inside each <li> with:
+                 <img src="logos/dld.svg" alt="Dubai Land Department"> -->
+            <li class="logo">Dubai Land Department</li>
+            <li class="logo">Dubai Health Authority</li>
+            <li class="logo">Sanlam</li>
+            <li class="logo">Nomo</li>
+            <li class="logo">DigsFact</li>
+            <li class="logo">Omdena</li>
+            <li class="logo">DetectNow</li>
+          </ul>
+          <ul class="logos" aria-hidden="true">
+            <li class="logo">Dubai Land Department</li>
+            <li class="logo">Dubai Health Authority</li>
+            <li class="logo">Sanlam</li>
+            <li class="logo">Nomo</li>
+            <li class="logo">DigsFact</li>
+            <li class="logo">Omdena</li>
+            <li class="logo">DetectNow</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- CONTENT -->
-	<div class="arlo_tm_content">
+  <section id="services" aria-labelledby="services-title">
+    <div class="wrap split">
+      <header class="reveal">
+        <h2 id="services-title">Services</h2>
+        <p>From deciding what is worth building to running it safely in production.</p>
+      </header>
+      <ul class="services reveal">
+        <li>
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="#i-compass"/></svg></span>
+          <div>
+            <h3>AI strategy, scoping and vendor evaluation</h3>
+            <p>Turn business needs into clear requirements, RFPs and evaluation criteria. Vendor claims get tested against your own documents so you can decide to build, buy or wait with evidence.</p>
+            <div class="tags"><b>Typical output:</b> use-case shortlist, requirements, scoring matrix, delivery plan</div>
+          </div>
+        </li>
+        <li>
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="#i-doc"/></svg></span>
+          <div>
+            <h3>Document AI and data extraction</h3>
+            <p>Read forms, contracts, certificates and records and turn them into structured data your systems can use, with confidence thresholds and a review queue for anything uncertain.</p>
+            <div class="tags"><b>Built with:</b> AWS Bedrock, Claude, Python, FastAPI</div>
+          </div>
+        </li>
+        <li>
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="#i-search"/></svg></span>
+          <div>
+            <h3>Knowledge search and assistants (RAG)</h3>
+            <p>Let staff ask questions of regulations, policies, product manuals and project wikis and get answers that cite the source page. Proven on content libraries of tens of thousands of pages.</p>
+            <div class="tags"><b>Built with:</b> retrieval augmented generation, vector search, LangChain, MongoDB</div>
+          </div>
+        </li>
+        <li>
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="#i-nodes"/></svg></span>
+          <div>
+            <h3>ML engineering and computer vision</h3>
+            <p>Classification, prediction, recommender systems, audio and signal models, defect detection, segmentation and super resolution, taken from data collection and pipelines through validation to monitored deployment on the cloud.</p>
+            <div class="tags"><b>Built with:</b> SageMaker, Lambda, Docker, Kubernetes, scikit-learn, XGBoost, PyTorch, TensorFlow</div>
+          </div>
+        </li>
+        <li>
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="#i-scale"/></svg></span>
+          <div>
+            <h3>AI governance and responsible adoption</h3>
+            <p>Repeatable processes for selecting, testing and approving AI: security, privacy, quality assurance, human oversight and service levels that stand up to audit.</p>
+            <div class="tags"><b>Typical output:</b> governance framework, testing protocol, selection process</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-		<!-- LEFTPART -->
-		<div class="arlo_tm_leftpart_wrap">
-			<div class="leftpart_inner">
-				<div class="logo_wrap">
-					<a href="#"><img src="img/logo/desktop-logo.png" alt="" /></a>
-				</div>
-				<div class="menu_list_wrap">
-					<ul class="anchor_nav">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#services">Skills</a></li>
-						<li><a href="#portfolio">Competitions</a></li>
-						<li><a href="#news">News</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<li><hr style="width:80%;text-align:left;margin-left:0"></li>
-						<li><a href="https://m-amr-social.medium.com/" target="_blank">Blogs</a></li>
-					</ul>
-				</div>
-				<div class="leftpart_bottom">
-					<div class="social_wrap">
-						<ul>
-							<li><a href="https://www.facebook.com/mohamed.amrHandasa" target="_blank"><i class="xcon-facebook"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/mamryehia/"target="_blank"><i class="xcon-linkedin"></i></a></li>
-							<li><a href="https://github.com/MoAmrYehia"target="_blank"><i class="fab fa-github"></i></a></li>
-							<li><a href="https://twitter.com/M_AmrYehia"target="_blank"><i class="xcon-twitter"></i></a></li>
-						</ul>
-					</div>
-				</div>
-				<a class="arlo_tm_resize" href="#"><i class="xcon-angle-left"></i></a>
-			</div>
-		</div>
-		<!-- /LEFTPART -->
+  <section class="alt" id="industries" aria-labelledby="industries-title">
+    <div class="wrap">
+      <div class="reveal">
+        <h2 id="industries-title">Industries</h2>
+        <p class="intro">Sectors where paperwork is heavy, data is sensitive and a wrong answer has consequences.</p>
+      </div>
+      <ul class="ind-list reveal">
+        <li>
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="#i-gov"/></svg></span>
+          <h3>Government and public services</h3>
+          <p>RFP requirements, vendor evaluation, AI governance frameworks and triage of high-volume service requests.</p>
+        </li>
+        <li>
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="#i-building"/></svg></span>
+          <h3>Real estate and land</h3>
+          <p>Extraction from title deeds, tenancy and sale contracts, search over regulations and procedures, and analytics on transaction data.</p>
+        </li>
+        <li>
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="#i-health"/></svg></span>
+          <h3>Healthcare</h3>
+          <p>Patient record summarization with clinician review, sick leave audit, and fraud, waste and abuse detection.</p>
+        </li>
+        <li>
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="#i-card"/></svg></span>
+          <h3>Banking and fintech</h3>
+          <p>KYC and onboarding document extraction, automated ML pipelines, and credit scoring for applicants without a credit history.</p>
+        </li>
+        <li>
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="#i-umbrella"/></svg></span>
+          <h3>Insurance</h3>
+          <p>Claims document extraction, search across product documentation, and computer vision for damage assessment.</p>
+        </li>
+        <li>
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="#i-factory"/></svg></span>
+          <h3>Manufacturing</h3>
+          <p>Visual inspection that spots damaged products on the production line, plus analytics and automation for plant operations.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-		<!-- RIGHTPART -->
-		<div class="arlo_tm_rightpart">
-			<div class="rightpart_inner">
-				<div class="arlo_tm_section" id="home">
-					<div class="arlo_tm_hero_header_wrap">
-						<div class="arlo_tm_universal_box_wrap">
-							<div class="bg_wrap">
-								<div class="overlay_image hero jarallax" data-speed="0.1"></div>
-								<div class="overlay_color hero"></div>
-							</div>
-							<div class="content hero">
-								<div class="inner_content">
-									<div class="image_wrap">
-										<img src="img/hero/new.png" alt="" />
-									</div>
-									<div class="name_holder">
-										<h3>Mohamed <span>Amr</span></h3>
-									</div>
-									<div class="text_typing">
-										<p>I'm a <span class="arlo_tm_animation_text_word"></span></p>
-									</div>
-								</div>
-							</div>
-							<div class="arlo_tm_arrow_wrap bounce anchor">
-								<a href="#about"><i class="xcon-angle-double-down"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
+  <section id="approach" aria-labelledby="approach-title">
+    <div class="wrap">
+      <div class="reveal">
+        <h2 id="approach-title">How we work together</h2>
+        <p class="intro">Start small, prove value on real data, and grow only what works.</p>
+      </div>
+      <ol class="steps reveal">
+        <li>
+          <div class="step-top"><span class="badge"><svg class="ico" aria-hidden="true"><use href="#i-target"/></svg></span><span>Step 1</span></div>
+          <h3>Scope</h3>
+          <p>We choose one workflow, agree how success is measured, and check data, privacy and integration constraints before anything is built.</p>
+        </li>
+        <li>
+          <div class="step-top"><span class="badge"><svg class="ico" aria-hidden="true"><use href="#i-flask"/></svg></span><span>Step 2</span></div>
+          <h3>Pilot</h3>
+          <p>A working pilot on your own documents, with people reviewing outputs so accuracy is measured rather than assumed.</p>
+        </li>
+        <li>
+          <div class="step-top"><span class="badge"><svg class="ico" aria-hidden="true"><use href="#i-trend"/></svg></span><span>Step 3</span></div>
+          <h3>Scale and govern</h3>
+          <p>Harden what worked, set monitoring and review thresholds, and hand over documentation your team can run with.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
 
-				<!-- ABOUT -->
-				<div class="arlo_tm_section relative" id="about">
-					<div class="arlo_tm_about_wrapper_all">
-						<div class="container">
-							<div class="arlo_tm_title_holder">
-								<h3>About Me</h3>
-								<span>Main informations about me</span>
-							</div>
-							<div class="arlo_tm_about_wrap">
-								<div class="author_wrap">
-									<div class="leftbox">
-										<div class="about_image_wrap parallax" data-relative-input="true">
-											<div class="image layer" data-depth="0.1">
-												<img src="img/about/550x640.jpg" alt="" />
-												<div class="inner" data-img-url="img/about/1.JPG"></div>
-											</div>
-											<div class="border layer" data-depth="0.2">
-												<img src="img/about/550x640.jpg" alt="" />
-												<div class="inner"></div>
-											</div>
-										</div>
+  <section id="work" aria-labelledby="work-title">
+    <div class="wrap split">
+      <header class="reveal">
+        <h2 id="work-title">Selected work</h2>
+        <p>Delivered in employed, contract and hackathon roles across healthcare, fintech, insurance, manufacturing and geospatial projects.</p>
+      </header>
+      <ul class="work reveal">
+        <li>
+          <figure class="thumb" role="img" aria-label="Illustration: several patient record pages condensed into one reviewed summary">
+            <svg viewBox="0 0 160 110" aria-hidden="true"><g fill="#1D2C47" stroke="#3A4D6B"><rect x="26" y="18" width="44" height="58" rx="3"/><rect x="20" y="25" width="44" height="58" rx="3"/><rect x="14" y="32" width="44" height="58" rx="3"/></g><g stroke="#5A6B85" stroke-width="2.5" stroke-linecap="round"><path d="M22 44h28M22 52h22M22 60h26M22 68h18M22 76h24"/></g><path d="M68 61h14m-5-5 5 5-5 5" stroke="#5CC8C0" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="90" y="24" width="58" height="66" rx="4" fill="#142036" stroke="#5CC8C0"/><g stroke-width="3" stroke-linecap="round"><path d="M100 38h30" stroke="#E9C46A"/><path d="M100 49h38M100 58h32M100 67h36" stroke="#5A6B85"/></g><circle cx="137" cy="80" r="6.5" fill="#5CC8C0"/><path d="M134 80l2 2 4-4" stroke="#0D1522" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+          </figure>
+          <div>
+            <span class="sector"><svg class="ico" aria-hidden="true"><use href="#i-health"/></svg>Healthcare</span>
+            <h3>Patient record summarization requirements</h3>
+            <p>Defined specialty-specific summaries, confidence thresholds, clinician review, privacy and disaster recovery for a government health authority's enterprise AI programme.</p>
+          </div>
+        </li>
+        <li>
+          <figure class="thumb" role="img" aria-label="Illustration: a sick leave certificate with one line flagged for a human reviewer">
+            <svg viewBox="0 0 160 110" aria-hidden="true"><rect x="30" y="12" width="66" height="86" rx="4" fill="#1D2C47" stroke="#3A4D6B"/><rect x="38" y="20" width="22" height="6" rx="2" fill="#5CC8C0" opacity=".7"/><g stroke="#5A6B85" stroke-width="2.5" stroke-linecap="round"><path d="M38 36h48M38 45h40M38 54h44M38 72h36M38 81h28"/></g><rect x="35" y="58.5" width="56" height="9" rx="2" fill="rgba(242,166,90,.28)"/><path d="M38 63h44" stroke="#F2A65A" stroke-width="2.5" stroke-linecap="round"/><path d="M96 63h14" stroke="#F2A65A" stroke-dasharray="3 3"/><circle cx="124" cy="56" r="9" fill="#142036" stroke="#F2A65A" stroke-width="1.5"/><path d="M114 80c1.5-7 5.5-10 10-10s8.5 3 10 10" fill="none" stroke="#F2A65A" stroke-width="1.5"/><circle cx="124" cy="56" r="3.5" fill="#F2A65A"/></svg>
+          </figure>
+          <div>
+            <span class="sector"><svg class="ico" aria-hidden="true"><use href="#i-health"/></svg>Healthcare</span>
+            <h3>HR agents and sick leave audit</h3>
+            <p>Scoped AI agents for job descriptions, interview questions and screening, and an AI-assisted audit workflow for high-volume medical leave cases, each with human oversight.</p>
+          </div>
+        </li>
+        <li>
+          <figure class="thumb" role="img" aria-label="Illustration: a cough recording turned into a spectrogram and classified">
+            <svg viewBox="0 0 160 110" aria-hidden="true"><rect x="10" y="18" width="62" height="74" rx="10" fill="#1D2C47" stroke="#3A4D6B"/><rect x="33" y="28" width="16" height="26" rx="8" fill="none" stroke="#5CC8C0" stroke-width="2"/><path d="M27 48a14 14 0 0028 0M41 62v8M34 70h14" stroke="#5CC8C0" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M18 82h8l3-6 4 10 4-14 4 16 4-9 3 3h8" stroke="#E9C46A" stroke-width="1.6" fill="none" stroke-linejoin="round"/><path d="M76 55h10m-4-4 4 4-4 4" stroke="#5CC8C0" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="92" y="22" width="58" height="66" rx="4" fill="#142036" stroke="#5CC8C0" stroke-opacity=".6"/><rect x="98.0" y="30.0" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="98.0" y="37.3" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="98.0" y="44.6" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="98.0" y="51.9" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="98.0" y="59.2" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="98.0" y="66.5" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="102.3" y="30.0" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="102.3" y="37.3" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="102.3" y="44.6" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="102.3" y="51.9" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="102.3" y="59.2" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="102.3" y="66.5" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="106.6" y="30.0" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="106.6" y="37.3" width="3.6" height="6.4" rx=".8" fill="#2C6B6E"/><rect x="106.6" y="44.6" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="106.6" y="51.9" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="106.6" y="59.2" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="106.6" y="66.5" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="110.9" y="30.0" width="3.6" height="6.4" rx=".8" fill="#2C6B6E"/><rect x="110.9" y="37.3" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="110.9" y="44.6" width="3.6" height="6.4" rx=".8" fill="#5CC8C0"/><rect x="110.9" y="51.9" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="110.9" y="59.2" width="3.6" height="6.4" rx=".8" fill="#2C6B6E"/><rect x="110.9" y="66.5" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="115.2" y="30.0" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="115.2" y="37.3" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="115.2" y="44.6" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="115.2" y="51.9" width="3.6" height="6.4" rx=".8" fill="#2C6B6E"/><rect x="115.2" y="59.2" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="115.2" y="66.5" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="119.5" y="30.0" width="3.6" height="6.4" rx=".8" fill="#5CC8C0"/><rect x="119.5" y="37.3" width="3.6" height="6.4" rx=".8" fill="#2C6B6E"/><rect x="119.5" y="44.6" width="3.6" height="6.4" rx=".8" fill="#2C6B6E"/><rect x="119.5" y="51.9" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="119.5" y="59.2" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="119.5" y="66.5" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="123.8" y="30.0" width="3.6" height="6.4" rx=".8" fill="#5CC8C0"/><rect x="123.8" y="37.3" width="3.6" height="6.4" rx=".8" fill="#2C6B6E"/><rect x="123.8" y="44.6" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="123.8" y="51.9" width="3.6" height="6.4" rx=".8" fill="#2C6B6E"/><rect x="123.8" y="59.2" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="123.8" y="66.5" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="128.1" y="30.0" width="3.6" height="6.4" rx=".8" fill="#5CC8C0"/><rect x="128.1" y="37.3" width="3.6" height="6.4" rx=".8" fill="#2C6B6E"/><rect x="128.1" y="44.6" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="128.1" y="51.9" width="3.6" height="6.4" rx=".8" fill="#2C6B6E"/><rect x="128.1" y="59.2" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="128.1" y="66.5" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="132.4" y="30.0" width="3.6" height="6.4" rx=".8" fill="#2C6B6E"/><rect x="132.4" y="37.3" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="132.4" y="44.6" width="3.6" height="6.4" rx=".8" fill="#2C6B6E"/><rect x="132.4" y="51.9" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="132.4" y="59.2" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="132.4" y="66.5" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="136.7" y="30.0" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="136.7" y="37.3" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="136.7" y="44.6" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="136.7" y="51.9" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="136.7" y="59.2" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="136.7" y="66.5" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="141.0" y="30.0" width="3.6" height="6.4" rx=".8" fill="#2C6B6E"/><rect x="141.0" y="37.3" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="141.0" y="44.6" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="141.0" y="51.9" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="141.0" y="59.2" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="141.0" y="66.5" width="3.6" height="6.4" rx=".8" fill="#1D2C47"/><rect x="98" y="76" width="46" height="8" rx="2" fill="#E9C46A"/><text x="101" y="82.3" font-family="IBM Plex Mono,monospace" font-size="6" fill="#0D1522">screen 0.87</text></svg>
+          </figure>
+          <div>
+            <span class="sector"><svg class="ico" aria-hidden="true"><use href="#i-health"/></svg>Healthcare research</span>
+            <h3>Cough sound screening with DetectNow</h3>
+            <p>Signal processing, cough data preparation and the ML pipeline for an app that analyzes cough recordings, built at the CodeVsCovid19 hackathon in Zurich. The project was later featured in Forbes and on CNNMoney Switzerland.</p>
+          </div>
+        </li>
+        <li>
+          <figure class="thumb" role="img" aria-label="Illustration: a search lens over a large library of product pages, one page matched">
+            <svg viewBox="0 0 160 110" aria-hidden="true"><g fill="#1D2C47" stroke="#2C3F5C"><rect x="8" y="8" width="12" height="16" rx="1.5"/><rect x="24" y="8" width="12" height="16" rx="1.5"/><rect x="40" y="8" width="12" height="16" rx="1.5"/><rect x="56" y="8" width="12" height="16" rx="1.5"/><rect x="72" y="8" width="12" height="16" rx="1.5"/><rect x="88" y="8" width="12" height="16" rx="1.5"/><rect x="104" y="8" width="12" height="16" rx="1.5"/><rect x="120" y="8" width="12" height="16" rx="1.5"/><rect x="136" y="8" width="12" height="16" rx="1.5"/><rect x="8" y="28" width="12" height="16" rx="1.5"/><rect x="24" y="28" width="12" height="16" rx="1.5"/><rect x="40" y="28" width="12" height="16" rx="1.5"/><rect x="56" y="28" width="12" height="16" rx="1.5"/><rect x="72" y="28" width="12" height="16" rx="1.5"/><rect x="88" y="28" width="12" height="16" rx="1.5"/><rect x="104" y="28" width="12" height="16" rx="1.5"/><rect x="120" y="28" width="12" height="16" rx="1.5"/><rect x="136" y="28" width="12" height="16" rx="1.5"/><rect x="8" y="48" width="12" height="16" rx="1.5"/><rect x="24" y="48" width="12" height="16" rx="1.5"/><rect x="40" y="48" width="12" height="16" rx="1.5"/><rect x="56" y="48" width="12" height="16" rx="1.5"/><rect x="72" y="48" width="12" height="16" rx="1.5"/><rect x="88" y="48" width="12" height="16" rx="1.5"/><rect x="104" y="48" width="12" height="16" rx="1.5"/><rect x="120" y="48" width="12" height="16" rx="1.5"/><rect x="136" y="48" width="12" height="16" rx="1.5"/><rect x="8" y="68" width="12" height="16" rx="1.5"/><rect x="24" y="68" width="12" height="16" rx="1.5"/><rect x="40" y="68" width="12" height="16" rx="1.5"/><rect x="56" y="68" width="12" height="16" rx="1.5"/><rect x="72" y="68" width="12" height="16" rx="1.5"/><rect x="88" y="68" width="12" height="16" rx="1.5"/><rect x="104" y="68" width="12" height="16" rx="1.5"/><rect x="120" y="68" width="12" height="16" rx="1.5"/><rect x="136" y="68" width="12" height="16" rx="1.5"/><rect x="8" y="88" width="12" height="16" rx="1.5"/><rect x="24" y="88" width="12" height="16" rx="1.5"/><rect x="40" y="88" width="12" height="16" rx="1.5"/><rect x="56" y="88" width="12" height="16" rx="1.5"/><rect x="72" y="88" width="12" height="16" rx="1.5"/><rect x="88" y="88" width="12" height="16" rx="1.5"/><rect x="104" y="88" width="12" height="16" rx="1.5"/><rect x="120" y="88" width="12" height="16" rx="1.5"/><rect x="136" y="88" width="12" height="16" rx="1.5"/></g><rect x="70" y="40" width="14" height="18" rx="1.5" fill="#E9C46A" opacity=".9"/><circle cx="77" cy="49" r="22" fill="rgba(92,200,192,.08)" stroke="#5CC8C0" stroke-width="2.5"/><path d="M93 65l16 16" stroke="#5CC8C0" stroke-width="5" stroke-linecap="round"/></svg>
+          </figure>
+          <div>
+            <span class="sector"><svg class="ico" aria-hidden="true"><use href="#i-umbrella"/></svg>Insurance</span>
+            <h3>Search across 60,000 pages of product content</h3>
+            <p>Built retrieval over product documentation from several subsidiaries so teams get consistent answers about insurance products.</p>
+          </div>
+        </li>
+        <li>
+          <figure class="thumb" role="img" aria-label="Illustration: highlighted lines in a document extracted into a structured table">
+            <svg viewBox="0 0 160 110" aria-hidden="true"><rect x="12" y="14" width="56" height="82" rx="4" fill="#1D2C47" stroke="#3A4D6B"/><g stroke-linecap="round" stroke-width="2.5"><path d="M20 28h40M20 46h36M20 64h40M20 82h30" stroke="#5A6B85"/><path d="M20 37h28M20 55h34M20 73h24" stroke="#E9C46A"/></g><path d="M74 55h12m-5-5 5 5-5 5" stroke="#5CC8C0" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="92" y="26" width="58" height="58" rx="4" fill="#142036" stroke="#5CC8C0"/><path d="M92 40.5h58M92 55h58M92 69.5h58M114 26v58" stroke="#2C3F5C"/><g fill="#E9C46A" opacity=".85"><rect x="119" y="45" width="24" height="5" rx="1.5"/><rect x="119" y="59.5" width="18" height="5" rx="1.5"/><rect x="119" y="74" width="22" height="5" rx="1.5"/></g><g fill="#5A6B85"><rect x="98" y="45" width="10" height="5" rx="1.5"/><rect x="98" y="59.5" width="10" height="5" rx="1.5"/><rect x="98" y="74" width="10" height="5" rx="1.5"/><rect x="98" y="31" width="10" height="5" rx="1.5"/><rect x="119" y="31" width="16" height="5" rx="1.5"/></g></svg>
+          </figure>
+          <div>
+            <span class="sector"><svg class="ico" aria-hidden="true"><use href="#i-card"/></svg>Fintech</span>
+            <h3>LLM document extraction and ML pipelines</h3>
+            <p>Turned unstructured documents into structured attributes with AWS Bedrock and Claude, and automated ML pipelines to cut manual data preparation.</p>
+          </div>
+        </li>
+        <li>
+          <figure class="thumb" role="img" aria-label="Illustration: a car with a dent outlined by an object detection box">
+            <svg viewBox="0 0 160 110" aria-hidden="true"><path d="M18 74h124v-10c0-6-4-9-10-10l-18-3-16-15c-3-2.5-6-4-10-4H56c-4 0-7 1.5-10 4L32 50l-9 3c-4 1.5-5 4-5 8z" fill="#1D2C47" stroke="#5A6B85" stroke-width="1.5"/><path d="M52 50l10-12h26l14 12z" fill="#142036" stroke="#3A4D6B"/><circle cx="46" cy="76" r="11" fill="#0D1522" stroke="#5A6B85" stroke-width="2"/><circle cx="116" cy="76" r="11" fill="#0D1522" stroke="#5A6B85" stroke-width="2"/><path d="M100 58c3 3 7 3 10 0" stroke="#8C99AD" stroke-width="1.5" fill="none"/><rect x="92" y="50" width="26" height="18" rx="1" fill="none" stroke="#E9C46A" stroke-width="1.8" stroke-dasharray="4 2.5"/><rect x="92" y="39" width="44" height="11" rx="1" fill="#E9C46A"/><text x="95" y="47" font-family="IBM Plex Mono,monospace" font-size="7" fill="#0D1522">dent 0.93</text></svg>
+          </figure>
+          <div>
+            <span class="sector"><svg class="ico" aria-hidden="true"><use href="#i-umbrella"/></svg>Insurance</span>
+            <h3>Damage detection with computer vision</h3>
+            <p>Image segmentation and object detection models for material and damage analysis, with eight models hosted on AWS.</p>
+          </div>
+        </li>
+        <li>
+          <figure class="thumb" role="img" aria-label="Illustration: a camera above a production line flagging one damaged product">
+            <svg viewBox="0 0 160 110" aria-hidden="true"><rect x="66" y="8" width="28" height="16" rx="3" fill="#142036" stroke="#5CC8C0" stroke-width="1.5"/><circle cx="80" cy="16" r="4" fill="none" stroke="#5CC8C0" stroke-width="1.5"/><path d="M72 24L56 60h48L88 24z" fill="rgba(92,200,192,.10)"/><rect x="8" y="74" width="144" height="9" rx="4.5" fill="#1D2C47" stroke="#3A4D6B"/><g fill="#0D1522" stroke="#5A6B85"><circle cx="18" cy="78.5" r="2.5"/><circle cx="46" cy="78.5" r="2.5"/><circle cx="74" cy="78.5" r="2.5"/><circle cx="102" cy="78.5" r="2.5"/><circle cx="130" cy="78.5" r="2.5"/></g><g fill="#2A3D5C" stroke="#5A6B85"><rect x="16" y="58" width="22" height="16" rx="2"/><rect x="112" y="58" width="22" height="16" rx="2"/></g><rect x="68" y="58" width="22" height="16" rx="2" fill="#2A3D5C" stroke="#5A6B85"/><path d="M74 58l4 6-3 3 5 7" stroke="#F2A65A" stroke-width="1.6" fill="none"/><rect x="63" y="53" width="32" height="26" rx="1" fill="none" stroke="#F2A65A" stroke-width="1.8" stroke-dasharray="4 2.5"/><path d="M8 95h144" stroke="#22324A"/><path d="M40 90h10m-3-3 3 3-3 3M110 90h10m-3-3 3 3-3 3" stroke="#3A4D6B" stroke-width="1.5" fill="none"/></svg>
+          </figure>
+          <div>
+            <span class="sector"><svg class="ico" aria-hidden="true"><use href="#i-factory"/></svg>Manufacturing</span>
+            <h3>Damage detection on a production line</h3>
+            <p>Computer vision that spots damaged products as they move along a manufacturing line, supporting automated quality inspection. Delivered as a contract engagement with Omdena.</p>
+          </div>
+        </li>
+        <li>
+          <figure class="thumb" role="img" aria-label="Illustration: a satellite image, pixelated on the left and sharpened by super resolution on the right">
+            <svg viewBox="0 0 160 110" aria-hidden="true"><defs><clipPath id="satR"><rect x="80" y="0" width="80" height="110"/></clipPath><clipPath id="satL"><rect x="0" y="0" width="80" height="110"/></clipPath></defs><g clip-path="url(#satR)"><rect x="0" y="0" width="52" height="40" fill="#2E5D4F"/><rect x="52" y="0" width="60" height="34" fill="#3B6E55"/><rect x="112" y="0" width="48" height="46" fill="#2A4F58"/><rect x="0" y="40" width="40" height="70" fill="#3F7458"/><rect x="40" y="62" width="70" height="48" fill="#2F5E4B"/><rect x="110" y="70" width="50" height="40" fill="#436F4C"/><rect x="52" y="34" width="60" height="28" fill="#34624F"/><rect x="112" y="46" width="48" height="24" fill="#2C5560"/><rect x="40" y="40" width="12" height="22" fill="#3A6A52"/><path d="M2 4h48" stroke="#ffffff" stroke-opacity=".06"/><path d="M2 10h48" stroke="#ffffff" stroke-opacity=".06"/><path d="M2 16h48" stroke="#ffffff" stroke-opacity=".06"/><path d="M2 22h48" stroke="#ffffff" stroke-opacity=".06"/><path d="M2 28h48" stroke="#ffffff" stroke-opacity=".06"/><path d="M2 34h48" stroke="#ffffff" stroke-opacity=".06"/><path d="M54 4h56" stroke="#ffffff" stroke-opacity=".06"/><path d="M54 10h56" stroke="#ffffff" stroke-opacity=".06"/><path d="M54 16h56" stroke="#ffffff" stroke-opacity=".06"/><path d="M54 22h56" stroke="#ffffff" stroke-opacity=".06"/><path d="M54 28h56" stroke="#ffffff" stroke-opacity=".06"/><path d="M114 4h44" stroke="#ffffff" stroke-opacity=".06"/><path d="M114 10h44" stroke="#ffffff" stroke-opacity=".06"/><path d="M114 16h44" stroke="#ffffff" stroke-opacity=".06"/><path d="M114 22h44" stroke="#ffffff" stroke-opacity=".06"/><path d="M114 28h44" stroke="#ffffff" stroke-opacity=".06"/><path d="M114 34h44" stroke="#ffffff" stroke-opacity=".06"/><path d="M114 40h44" stroke="#ffffff" stroke-opacity=".06"/><path d="M2 44h36" stroke="#ffffff" stroke-opacity=".06"/><path d="M2 50h36" stroke="#ffffff" stroke-opacity=".06"/><path d="M2 56h36" stroke="#ffffff" stroke-opacity=".06"/><path d="M2 62h36" stroke="#ffffff" stroke-opacity=".06"/><path d="M2 68h36" stroke="#ffffff" stroke-opacity=".06"/><path d="M2 74h36" stroke="#ffffff" stroke-opacity=".06"/><path d="M2 80h36" stroke="#ffffff" stroke-opacity=".06"/><path d="M2 86h36" stroke="#ffffff" stroke-opacity=".06"/><path d="M2 92h36" stroke="#ffffff" stroke-opacity=".06"/><path d="M2 98h36" stroke="#ffffff" stroke-opacity=".06"/><path d="M2 104h36" stroke="#ffffff" stroke-opacity=".06"/><path d="M42 66h66" stroke="#ffffff" stroke-opacity=".06"/><path d="M42 72h66" stroke="#ffffff" stroke-opacity=".06"/><path d="M42 78h66" stroke="#ffffff" stroke-opacity=".06"/><path d="M42 84h66" stroke="#ffffff" stroke-opacity=".06"/><path d="M42 90h66" stroke="#ffffff" stroke-opacity=".06"/><path d="M42 96h66" stroke="#ffffff" stroke-opacity=".06"/><path d="M42 102h66" stroke="#ffffff" stroke-opacity=".06"/><path d="M42 108h66" stroke="#ffffff" stroke-opacity=".06"/><path d="M112 74h46" stroke="#ffffff" stroke-opacity=".06"/><path d="M112 80h46" stroke="#ffffff" stroke-opacity=".06"/><path d="M112 86h46" stroke="#ffffff" stroke-opacity=".06"/><path d="M112 92h46" stroke="#ffffff" stroke-opacity=".06"/><path d="M112 98h46" stroke="#ffffff" stroke-opacity=".06"/><path d="M112 104h46" stroke="#ffffff" stroke-opacity=".06"/><path d="M54 38h56" stroke="#ffffff" stroke-opacity=".06"/><path d="M54 44h56" stroke="#ffffff" stroke-opacity=".06"/><path d="M54 50h56" stroke="#ffffff" stroke-opacity=".06"/><path d="M54 56h56" stroke="#ffffff" stroke-opacity=".06"/><path d="M114 50h44" stroke="#ffffff" stroke-opacity=".06"/><path d="M114 56h44" stroke="#ffffff" stroke-opacity=".06"/><path d="M114 62h44" stroke="#ffffff" stroke-opacity=".06"/><path d="M114 68h44" stroke="#ffffff" stroke-opacity=".06"/><path d="M42 44h8" stroke="#ffffff" stroke-opacity=".06"/><path d="M42 50h8" stroke="#ffffff" stroke-opacity=".06"/><path d="M42 56h8" stroke="#ffffff" stroke-opacity=".06"/><polyline points="0,48.0 4,50.9 8,53.7 12,56.3 16,58.6 20,60.6 24,62.2 28,63.3 32,63.9 36,64.0 40,63.5 44,62.5 48,61.1 52,59.2 56,57.0 60,54.4 64,51.7 68,48.8 72,45.9 76,43.1 80,40.4 84,38.0 88,35.9 92,34.2 96,33.0 100,32.2 104,32.0 108,32.3 112,33.1 116,34.4 120,36.2 124,38.4 128,40.8 132,43.5 136,46.4 140,49.3 144,52.1 148,54.9 152,57.4 156,59.6 160,61.4" fill="none" stroke="#2B6C8C" stroke-width="11"/><path d="M70 0L130.5 110" stroke="#8C99AD" stroke-width="3"/><g fill="#C9D2DF"><rect x="118" y="20" width="5" height="4"/><rect x="126" y="24" width="4" height="5"/><rect x="140" y="80" width="6" height="4"/><rect x="92" y="88" width="4" height="4"/></g></g><g clip-path="url(#satL)" shape-rendering="crispEdges"><rect x="0" y="0" width="16" height="16" fill="#2E5D4F"/><rect x="16" y="0" width="16" height="16" fill="#2E5D4F"/><rect x="32" y="0" width="16" height="16" fill="#2E5D4F"/><rect x="48" y="0" width="16" height="16" fill="#3B6E55"/><rect x="64" y="0" width="16" height="16" fill="#3B6E55"/><rect x="0" y="16" width="16" height="16" fill="#2E5D4F"/><rect x="16" y="16" width="16" height="16" fill="#2E5D4F"/><rect x="32" y="16" width="16" height="16" fill="#2E5D4F"/><rect x="48" y="16" width="16" height="16" fill="#3B6E55"/><rect x="64" y="16" width="16" height="16" fill="#3B6E55"/><rect x="0" y="32" width="16" height="16" fill="#3F7458"/><rect x="16" y="32" width="16" height="16" fill="#3F7458"/><rect x="32" y="32" width="16" height="16" fill="#3A6A52"/><rect x="48" y="32" width="16" height="16" fill="#34624F"/><rect x="64" y="32" width="16" height="16" fill="#34624F"/><rect x="0" y="48" width="16" height="16" fill="#2B6C8C"/><rect x="16" y="48" width="16" height="16" fill="#3F7458"/><rect x="32" y="48" width="16" height="16" fill="#3A6A52"/><rect x="48" y="48" width="16" height="16" fill="#2B6C8C"/><rect x="64" y="48" width="16" height="16" fill="#34624F"/><rect x="0" y="64" width="16" height="16" fill="#3F7458"/><rect x="16" y="64" width="16" height="16" fill="#3F7458"/><rect x="32" y="64" width="16" height="16" fill="#2F5E4B"/><rect x="48" y="64" width="16" height="16" fill="#2F5E4B"/><rect x="64" y="64" width="16" height="16" fill="#2F5E4B"/><rect x="0" y="80" width="16" height="16" fill="#3F7458"/><rect x="16" y="80" width="16" height="16" fill="#3F7458"/><rect x="32" y="80" width="16" height="16" fill="#2F5E4B"/><rect x="48" y="80" width="16" height="16" fill="#2F5E4B"/><rect x="64" y="80" width="16" height="16" fill="#2F5E4B"/><rect x="0" y="96" width="16" height="16" fill="#3F7458"/><rect x="16" y="96" width="16" height="16" fill="#3F7458"/><rect x="32" y="96" width="16" height="16" fill="#2F5E4B"/><rect x="48" y="96" width="16" height="16" fill="#2F5E4B"/><rect x="64" y="96" width="16" height="16" fill="#2F5E4B"/></g><path d="M80 0v110" stroke="#E7ECF3" stroke-width="1.5"/><circle cx="80" cy="55" r="7" fill="#0D1522" stroke="#E7ECF3" stroke-width="1.5"/><path d="M77 52.5l-2.5 2.5 2.5 2.5M83 52.5l2.5 2.5-2.5 2.5" stroke="#E7ECF3" stroke-width="1.3" fill="none"/><g font-family="IBM Plex Sans,Segoe UI,sans-serif" font-size="8" fill="#E7ECF3"><rect x="4" y="96" width="30" height="11" rx="2" fill="#0D1522" opacity=".8"/><text x="8" y="104">input</text><rect x="122" y="96" width="34" height="11" rx="2" fill="#0D1522" opacity=".8"/><text x="126" y="104">4x SR</text></g></svg>
+          </figure>
+          <div>
+            <span class="sector"><svg class="ico" aria-hidden="true"><use href="#i-satellite"/></svg>Geospatial</span>
+            <h3>Satellite image super resolution</h3>
+            <p>Deep learning models that sharpen low-resolution satellite imagery so smaller features such as roads, buildings and field boundaries can be analyzed. Delivered as a contract engagement with Omdena.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-									</div>
-									<div class="rightbox">
-										<div class="arlo_tm_mini_title_holder">
-											<h4>I'm Mohamed Amr and <span class="arlo_tm_animation_text_word"></span></h4>
-										</div>
-										<div class="definition">
-											<p>Hi! My name is <strong>Mohamed Amr</strong>. I am a Machine Learning Engineer, and I'm very passionate and dedicated to my work. With 2 years of experience as a junior ML Engineer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the ML pipelines, from defining the problem and data collection to model deployment and integration</p>
+  <section class="alt" id="insights" aria-labelledby="insights-title">
+    <div class="wrap">
+      <div class="insights-head reveal">
+        <div>
+          <h2 id="insights-title">Insights</h2>
+          <p class="intro">Practical notes on document AI, retrieval and AI governance, drawn from real projects.</p>
+        </div>
+        <div class="actions"><a class="btn quiet" href="https://m-amr-social.medium.com/" rel="noopener" target="_blank"><svg class="ico" aria-hidden="true"><use href="#i-pen"/></svg>Earlier posts on Medium</a><a class="btn quiet" href="blog.html">All articles<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+      </div>
+      <!-- BLOG:START (generated by Blog Studio. Edit posts in studio/blog-studio.html, not here) -->
+<ul class="posts reveal"><li class="post-card" data-tag="Document AI"><a href="blog/human-review-document-ai-from-day-one.html"><div class="post-cover"><svg viewBox="0 0 400 210" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"><defs><radialGradient id="g5680" cx="80%" cy="0%" r="90%"><stop offset="0" stop-color="#1B4A55"/><stop offset="1" stop-color="#101A2A"/></radialGradient></defs><rect width="400" height="210" fill="url(#g5680)"/><rect x="24" y="30" width="224" height="160" rx="6" fill="#142036" stroke="#2C3F5C"/><rect x="44" y="59.5" width="183" height="5" rx="2.5" fill="#3A4D6B"/><rect x="44" y="81.5" width="132" height="5" rx="2.5" fill="#3A4D6B"/><rect x="44" y="103.5" width="136" height="5" rx="2.5" fill="#3A4D6B"/><rect x="40" y="121" width="161" height="14" rx="3" fill="rgba(233,196,106,.28)"/><rect x="44" y="125.5" width="153" height="5" rx="2.5" fill="#E9C46A"/><rect x="44" y="147.5" width="183" height="5" rx="2.5" fill="#3A4D6B"/><rect x="40" y="165" width="136" height="14" rx="3" fill="rgba(233,196,106,.28)"/><rect x="44" y="169.5" width="128" height="5" rx="2.5" fill="#E9C46A"/><path d="M252 110h10" stroke="#5CC8C0" stroke-width="2" stroke-linecap="round"/><rect x="266" y="56" width="104" height="120" rx="6" fill="#0D1522" stroke="#5CC8C0" stroke-opacity=".6"/><rect x="276" y="71.5" width="44" height="5" rx="2.5" fill="#5A6B85"/><rect x="276" y="80" width="54" height="5" rx="2.5" fill="#E9C46A" opacity=".85"/><circle cx="352" cy="77" r="3.5" fill="#5CC8C0"/><rect x="276" y="97.5" width="38" height="5" rx="2.5" fill="#5A6B85"/><rect x="276" y="106" width="59" height="5" rx="2.5" fill="#E9C46A" opacity=".85"/><circle cx="352" cy="103" r="3.5" fill="#5CC8C0"/><rect x="276" y="123.5" width="38" height="5" rx="2.5" fill="#5A6B85"/><rect x="276" y="132" width="45" height="5" rx="2.5" fill="#E9C46A" opacity=".85"/><circle cx="352" cy="129" r="3.5" fill="#5CC8C0"/><rect x="276" y="149.5" width="48" height="5" rx="2.5" fill="#5A6B85"/><rect x="276" y="158" width="55" height="5" rx="2.5" fill="#E9C46A" opacity=".85"/><circle cx="352" cy="155" r="3.5" fill="#5CC8C0"/></svg></div><div class="post-body"><div class="post-meta"><span class="post-tag">Document AI</span><span>15 September 2026</span><span>2 min read</span></div><h3>Human review belongs in document AI from day one</h3><p>Why document AI projects in healthcare, insurance and government should design human review first, and how per-field confidence thresholds make it work.</p><span class="read">Read article</span></div></a></li><li class="post-card" data-tag="AI strategy"><a href="blog/questions-before-buying-enterprise-ai.html"><div class="post-cover"><svg viewBox="0 0 400 210" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"><defs><radialGradient id="g4388" cx="80%" cy="0%" r="90%"><stop offset="0" stop-color="#1B4A55"/><stop offset="1" stop-color="#101A2A"/></radialGradient></defs><rect width="400" height="210" fill="url(#g4388)"/><rect x="24" y="30" width="224" height="160" rx="6" fill="#142036" stroke="#2C3F5C"/><rect x="44" y="59.5" width="160" height="5" rx="2.5" fill="#3A4D6B"/><rect x="40" y="77" width="183" height="14" rx="3" fill="rgba(233,196,106,.28)"/><rect x="44" y="81.5" width="175" height="5" rx="2.5" fill="#E9C46A"/><rect x="44" y="103.5" width="174" height="5" rx="2.5" fill="#3A4D6B"/><rect x="44" y="125.5" width="117" height="5" rx="2.5" fill="#3A4D6B"/><rect x="44" y="147.5" width="119" height="5" rx="2.5" fill="#3A4D6B"/><rect x="40" y="165" width="184" height="14" rx="3" fill="rgba(233,196,106,.28)"/><rect x="44" y="169.5" width="176" height="5" rx="2.5" fill="#E9C46A"/><path d="M252 110h10" stroke="#5CC8C0" stroke-width="2" stroke-linecap="round"/><rect x="266" y="56" width="104" height="120" rx="6" fill="#0D1522" stroke="#5CC8C0" stroke-opacity=".6"/><rect x="276" y="71.5" width="40" height="5" rx="2.5" fill="#5A6B85"/><rect x="276" y="80" width="57" height="5" rx="2.5" fill="#E9C46A" opacity=".85"/><circle cx="352" cy="77" r="3.5" fill="#5CC8C0"/><rect x="276" y="97.5" width="40" height="5" rx="2.5" fill="#5A6B85"/><rect x="276" y="106" width="45" height="5" rx="2.5" fill="#E9C46A" opacity=".85"/><circle cx="352" cy="103" r="3.5" fill="#5CC8C0"/><rect x="276" y="123.5" width="49" height="5" rx="2.5" fill="#5A6B85"/><rect x="276" y="132" width="56" height="5" rx="2.5" fill="#E9C46A" opacity=".85"/><circle cx="352" cy="129" r="3.5" fill="#5CC8C0"/><rect x="276" y="149.5" width="51" height="5" rx="2.5" fill="#5A6B85"/><rect x="276" y="158" width="57" height="5" rx="2.5" fill="#E9C46A" opacity=".85"/><circle cx="352" cy="155" r="3.5" fill="#5CC8C0"/></svg></div><div class="post-body"><div class="post-meta"><span class="post-tag">AI strategy</span><span>28 August 2026</span><span>2 min read</span></div><h3>Seven questions to ask before buying an enterprise AI tool</h3><p>A practical checklist for evaluating AI vendors: testing on your own documents, data residency, citations, human oversight, monitoring and exit plans.</p><span class="read">Read article</span></div></a></li></ul>
+<!-- BLOG:END -->
+    </div>
+  </section>
 
-											<p><br>My goal is to fulfill the gap between business and AI technologies. While having strong programming skills so I can accomplish a proof of concept for the project. I take pride in considering business, user experience, and privacy, and technological aspects when designing AI features, services, and simply explaining complicated processes to the other departments.   </p>
-										</div>
-										<div class="about_short_contact_wrap">
-											<ul>
-												<li>
-													<span><label>Birthday:</label> 01.01.1998</span>
-												</li>
-												<li>
-													<span><label>Age:</label> 25</span>
-												</li>
-												<li>
-													<span><label>City:</label> Cairo, Egypt</span>
-												</li>
-												<li>
-													<span><label>Interests:</label> Anime, Reading</span>
-												</li>
-												<li>
-													<span><label>Study:</label> Ain Shams University</span>
-												</li>
-												<li>
-													<span><label>Degree:</label> Bachelor</span>
-												</li>
-												<li>
-													<span><label>Website:</label> <a href="#">mohamed-resume.tech</a></span>
-												</li>
-												<li>
-													<span><label>Mail:</label> <a href="m.amryehia@gmail.com">m.amryehia&#64;gmail.com</a></span>
-												</li>
-												<li>
-													<span><label>Phone:</label> <a href="#">+20 1099 099 162</a></span>
-												</li>
-												<li>
-													<span><label>Twitter:</label> <a href="#">&#64;M_AmrYehia</a></span>
-												</li>
-											</ul>
-										</div>
-										<div class="buttons_wrap">
-											<ul>
-												<li>
-													<a href="files/1.2.2020_MohaedAmr.pdf"><span>Download CV</span></a>
-												</li>
-												<li>
-													<a href="files/Mohamed Business Card.pdf"><span>Business Card</span></a>
-												</li>
-												<li class="anchor">
-													<a href="#contact"><span>Send Message</span></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /ABOUT -->
+  <section id="about" aria-labelledby="about-title">
+    <div class="wrap split">
+      <header class="reveal">
+        <h2 id="about-title">About</h2>
+        <p>Signet is the consultancy of Mohamed Amr.</p>
+        <figure class="portrait">
+          <div class="frame">
+            <img src="images/mohamed-amr.webp" alt="Mohamed Amr, founder of Signet" width="480" height="600" loading="lazy">
+          </div>
+          <figcaption>Mohamed Amr, founder</figcaption>
+        </figure>
+      </header>
+      <div class="about-text reveal">
+        <p>I'm Mohamed Amr, a senior AI and ML engineer based in Dubai. For more than six years I have built machine learning, document AI, computer vision and retrieval systems, and led enterprise AI requirements, vendor evaluation and governance for organizations including Dubai Land Department, Dubai Health Authority, Sanlam and Nomo.</p>
+        <p>I work comfortably on both sides of the table: writing Python and deploying models on AWS, and sitting with clinicians, underwriters, regulators and IT leads to decide what should be automated and what needs a person in the loop.</p>
+        <ul class="facts">
+          <li><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg><span><b>6+ years</b>applied AI and ML</span></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-cloud"/></svg><span><b>AWS and Azure</b>cloud delivery</span></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-layers"/></svg><span><b>6 industries</b>regulated and industrial</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-				<!-- SKILLS -->
-				<div class="arlo_tm_section">
-					<div class="arlo_tm_skills_wrap">
-						<div class="container">
-							<div class="inner_wrap">
-								<div class="leftbox">
-									<div class="arlo_tm_mini_title_holder">
-										<h4>Some About my Abilities</h4>
-									</div>
-									<p>I am a machine learning engineer and an AI product manager who operates at tech companies, where I can apply my artificial intelligence experience, building machine learning pipelines, and systems development skills to support next-generation project growth and success.</p>
-								</div>
-								<div class="rightbox">
-									<div class="progress_bar_wrap_total">
-										<div class="arlo_tm_progress_wrap" data-size="small" data-round="c" data-strip="off">
-											<div class="arlo_tm_progress" data-value="75" data-color="#000">
-												<span><span class="label">PyData Ecosystem- <span class="experience">3 years of experience</span></span><span class="number">75%</span></span>
-												<div class="arlo_tm_bar_bg"><div class="arlo_tm_bar_wrap"><div class="arlo_tm_bar"></div></div></div>
-											</div>
-											<div class="arlo_tm_progress" data-value="80" data-color="#000">
-												<span><span class="label">Machine Learning - <span class="experience">2 years of experience</span></span><span class="number">85%</span></span>
-												<div class="arlo_tm_bar_bg"><div class="arlo_tm_bar_wrap"><div class="arlo_tm_bar"></div></div></div>
-											</div>
-											<div class="arlo_tm_progress" data-value="70" data-color="#000">
-												<span><span class="label">Big Data - <span class="experience">1 year of experience</span></span><span class="number">70%</span></span>
-												<div class="arlo_tm_bar_bg"><div class="arlo_tm_bar_wrap"><div class="arlo_tm_bar"></div></div></div>
-											</div>
-											<div class="arlo_tm_progress" data-value="50" data-color="#000">
-												<span><span class="label">Web Scraping - <span class="experience">1 year of experience</span></span><span class="number">50%</span></span>
-												<div class="arlo_tm_bar_bg"><div class="arlo_tm_bar_wrap"><div class="arlo_tm_bar"></div></div></div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /SKILLS -->
+  <section class="alt" id="credentials" aria-labelledby="credentials-title">
+    <div class="wrap">
+      <div class="reveal">
+        <h2 id="credentials-title">Credentials</h2>
+        <p class="intro">Professional certifications, formal study, community work and recognition.</p>
+      </div>
+      <div class="creds reveal">
+        <article class="cred" aria-labelledby="c-certs">
+          <div class="cred-head"><span class="badge"><svg class="ico" aria-hidden="true"><use href="#i-badge"/></svg></span><h3 id="c-certs">Certifications</h3></div>
+          <ul>
+            <li><b>Machine Learning, Specialty</b><span>Amazon Web Services</span></li>
+            <li><b>Data Analytics, Specialty</b><span>Amazon Web Services</span></li>
+            <li><b>Database, Specialty</b><span>Amazon Web Services</span></li>
+            <li><b>Solutions Architect, Associate</b><span>Amazon Web Services</span></li>
+            <li><b>Cloud Practitioner</b><span>Amazon Web Services</span></li>
+            <li><b>TensorFlow Developer Certificate</b><span>Google</span></li>
+            <li><b>Azure AI Fundamentals</b><span>Microsoft</span></li>
+          </ul>
+        </article>
+        <article class="cred" aria-labelledby="c-study">
+          <div class="cred-head"><span class="badge"><svg class="ico" aria-hidden="true"><use href="#i-cap"/></svg></span><h3 id="c-study">Education</h3></div>
+          <ul>
+            <li><b>MSc Data Science</b><span>University of Leeds, 2023 to 2026</span></li>
+            <li><b>BSc Computer and Systems Engineering</b><span>Ain Shams University, 2016 to 2023</span></li>
+            <li><b>AI Product Manager Nanodegree</b><span>Professional course</span></li>
+            <li><b>Intel Edge AI and PyTorch scholarship programmes</b><span>Professional courses</span></li>
+          </ul>
+        </article>
+        <article class="cred" aria-labelledby="c-community">
+          <div class="cred-head"><span class="badge"><svg class="ico" aria-hidden="true"><use href="#i-people"/></svg></span><h3 id="c-community">Community</h3></div>
+          <ul>
+            <li><b>AWS Community Builder</b><span>Amazon Web Services programme</span></li>
+            <li><b>MongoDB Community Champion</b><span>MongoDB</span></li>
+            <li><b>Organizer, MongoDB User Group Dubai</b><span>Meetups for developers and data teams</span></li>
+            <li><b>Organizer, MongoDB User Group Cairo</b><span>Meetups for developers and data teams</span></li>
+          </ul>
+        </article>
+        <article class="cred" aria-labelledby="c-recog">
+          <div class="cred-head"><span class="badge"><svg class="ico" aria-hidden="true"><use href="#i-star"/></svg></span><h3 id="c-recog">Recognition</h3></div>
+          <ul>
+            <li><b><a href="https://www.forbes.com/sites/tomokoyokoi/2020/04/16/the-hackathon-approach-to-covid-19-showcases-agile-innovation-at-its-best/" rel="noopener" target="_blank">Featured in Forbes</a></b><span>DetectNow cough screening, April 2020</span></li>
+            <li><b>Covered by CNNMoney Switzerland</b><span>DetectNow, April 2020</span></li>
+            <li><b>Winning team, National Health Hackathon</b><span>DetectNow, May 2020</span></li>
+            <li><b>Omdena Creedix credit scoring challenge</b><span>One of 45 collaborators from 27 countries, 2020</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
 
-				<!-- SERVICES -->
-				<div class="arlo_tm_section" id="services">
-					<div class="arlo_tm_services_wrap">
-						<div class="container">
-							<div class="arlo_tm_title_holder">
-								<h3>Amazing Skills</h3>
-								<span>Meet my amazing skills</span>
-							</div>
-							<div class="list_wrap">
-								<ul>
-									<li>
-										<div class="inner">
-											<div class="icon">
-												<img class="svg" src="img/svg/inference.svg" alt="" />
-											</div>
-											<div class="title_service">
-												<h3>Machine Learning</h3>
-											</div>
-											<div class="text">
-												<p>Make benefits from different ML techniques to solve problems in innovative ways. </p>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="inner">
-											<div class="icon">
-												<img class="svg" src="img/svg/deep-learning.svg" alt="" />
-											</div>
-											<div class="title_service">
-												<h3>Recommender System</h3>
-											</div>
-											<div class="text">
-												<p>Apply recommender systems in your industry to stand out significantly from competitors.</p>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="inner">
-											<div class="icon">
-												<img class="svg" src="img/svg/embedded.svg" alt="" />
-											</div>
-											<div class="title_service">
-												<h3>Web Scraping</h3>
-											</div>
-											<div class="text">
-												<p>Collect data from web pages via scraping through powerful tools like selenium and beautifulsoup.</p>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="inner">
-											<div class="icon">
-												<img class="svg" src="img/svg/api.svg" alt="" />
-											</div>
-											<div class="title_service">
-												<h3>RESTful API</h3>
-											</div>
-											<div class="text">
-												<p>Bring your solution to the world, deploy the ML model by using Flask to be integrated with the system.</p>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="inner">
-											<div class="icon">
-												<img class="svg" src="img/svg/docker.svg" alt="" />
-											</div>
-											<div class="title_service">
-												<h3>Containerization</h3>
-											</div>
-											<div class="text">
-												<p>Improved security by isolating applications from the host system and from each other.</p>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="inner">
-											<div class="icon">
-												<img class="svg" src="img/svg/scala.svg" alt="" />
-											</div>
-											<div class="title_service">
-												<h3>Data Engineering</h3>
-											</div>
-											<div class="text">
-												<p>Focus on the applications and harvesting of big data by creating data models and information flow.</p>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /SERVICES -->
+  <section class="faq" id="faq" aria-labelledby="faq-title">
+    <div class="wrap split">
+      <header class="reveal">
+        <h2 id="faq-title">Questions</h2>
+      </header>
+      <div class="reveal">
+        <details>
+          <summary>Which industries do you work with?</summary>
+          <p>Government and public services, real estate and land, healthcare, banking and fintech, insurance, and manufacturing: sectors where documents are dense, data is sensitive and decisions need human review.</p>
+        </details>
+        <details>
+          <summary>Do you only work in Dubai?</summary>
+          <p>Signet is based in Dubai and works in person across the UAE. Remote engagements are welcome elsewhere.</p>
+        </details>
+        <details>
+          <summary>What does a first engagement usually look like?</summary>
+          <p>A short scoping phase: we pick one workflow, agree how success will be measured, and decide whether to build, buy or wait. You get a written recommendation either way.</p>
+        </details>
+        <details>
+          <summary>Can you help us evaluate AI vendors?</summary>
+          <p>Yes. I write RFP requirements, define evaluation criteria and test vendor claims against your own documents and data, including security, privacy and service levels.</p>
+        </details>
+      </div>
+    </div>
+  </section>
 
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <h2 id="contact-title">Tell me about the workflow you want to improve.</h2>
+        <p class="lead">A 30-minute call is enough to tell whether AI is a good fit and what a first step would involve. No slides required.</p>
+        <div class="actions">
+          <a class="btn" href="mailto:M.amryehia@gmail.com?subject=Signet%20consultation%20enquiry"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg>Email me</a>
+          <a class="btn quiet" href="https://www.linkedin.com/in/mamryehia/" rel="noopener" target="_blank"><svg class="ico" aria-hidden="true"><use href="#i-profile"/></svg>Message on LinkedIn</a>
+        </div>
+        <ul class="reach">
+          <li><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:M.amryehia@gmail.com">M.amryehia@gmail.com</a></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+971585872638">+971 58 587 2638</a></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg><a href="https://github.com/MoAmrYehia" rel="noopener" target="_blank">github.com/MoAmrYehia</a></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-pen"/></svg><a href="https://m-amr-social.medium.com/" rel="noopener" target="_blank">Writing on Medium</a></li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>Dubai, United Arab Emirates</li>
+        </ul>
+      </div>
 
-				<!-- PORTFOLIO -->
-				<div class="arlo_tm_section relative" id="portfolio">
-					<div class="arlo_tm_portfolio_wrapper_all">
+      <div class="booking reveal" id="book" aria-labelledby="book-title">
+        <div class="book-head">
+          <span class="badge"><svg class="ico" aria-hidden="true"><use href="#i-calendar"/></svg></span>
+          <div><h3 id="book-title">Book a 30-minute call</h3><p>Pick a time that suits you. Times shown in your local time zone.</p></div>
+        </div>
+        <!-- Calendly loads here automatically once CALENDLY_URL is set in the script at the bottom of this file -->
+        <div class="cal-slot" id="calSlot">
+          <div class="cal-placeholder" id="calPlaceholder">
+            <div class="mini-cal" aria-hidden="true">
+              <div class="mini-cal-head"><span>Choose a day</span><span>Mon to Fri</span></div>
+              <div class="days">
+                <b>M</b><b>T</b><b>W</b><b>T</b><b>F</b><b>S</b><b>S</b>
+                <i></i><i></i><i>1</i><i>2</i><i>3</i><i>4</i><i>5</i>
+                <i class="av">6</i><i class="av">7</i><i class="sel">8</i><i class="av">9</i><i>10</i><i>11</i><i>12</i>
+                <i class="av">13</i><i>14</i><i class="av">15</i><i class="av">16</i><i>17</i><i>18</i><i>19</i>
+                <i class="av">20</i><i class="av">21</i><i>22</i><i class="av">23</i><i>24</i><i>25</i><i>26</i>
+                <i>27</i><i class="av">28</i><i class="av">29</i><i>30</i><i></i><i></i><i></i>
+              </div>
+            </div>
+            <div class="slots" aria-hidden="true">
+              <div class="slots-label">Available times</div>
+              <div class="slot">10:00</div>
+              <div class="slot picked">11:30</div>
+              <div class="slot">14:00</div>
+              <div class="slot">16:30</div>
+            </div>
+            <div class="cal-note">
+              <p>Online booking is being set up. Until then, email me and I'll reply with times that work.</p>
+              <a class="btn quiet" href="mailto:M.amryehia@gmail.com?subject=Booking%20a%2030-minute%20call">Request a time</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
-						<!-- PORTFOLIO FILTER -->
-						<div class="arlo_tm_second_portfolio">
-						<div class="container">
-							<div class="arlo_tm_portfolio_wrap">
-								<div class="arlo_tm_title_holder portfolio">
-									<h3>Creative Works</h3>
-									<span>Check my participation in various competitions</span>
-								</div>
-								<div class="arlo_tm_portfolio_titles"></div>
-								<ul class="arlo_tm_portfolio_filter">
-									<li><a href="#" class="current" data-filter="*">All</a></li>
-									<li><a href="#" data-filter=".design">Online</a></li>
-									<li><a href="#" data-filter=".photography">Onsite</a></li>
-									<li><a href="#" data-filter=".development">Long-Term</a></li>
-								</ul>
-								<ul class="arlo_tm_portfolio_list gallery_zoom">
-									<li class="design">
-										<div class="entry arlo_tm_portfolio_animation_wrap" data-title="CodeVsCovid19" data-category="Online">
-											<a href="portfolio-single-1.html">
-												<img src="img/portfolio/600x600.jpg" alt="" />
-												<div class="arlo_tm_portfolio_image_main" data-img-url="img/portfolio/1.png"></div>
-											</a>
-										</div>
-									</li>
-									<li class="photography">
-										<div class="entry arlo_tm_portfolio_animation_wrap" data-title="Egypt 2030 Hackathon" data-category="Onsite">
-											<a href="portfolio-single-2.html">
-												<img src="img/portfolio/600x600.jpg" alt="" />
-												<div class="arlo_tm_portfolio_image_main" data-img-url="img/portfolio/2.jpg"></div>
-											</a>
-										</div>
-									</li>
-									<li class="development">
-										<div class="entry arlo_tm_portfolio_animation_wrap" data-title="Decoding Health Challenge" data-category="Long-Term">
-											<a href="portfolio-single-3.html">
-												<img src="img/portfolio/600x600.jpg" alt="" />
-												<div class="arlo_tm_portfolio_image_main" data-img-url="img/portfolio/7.jpg"></div>
-											</a>
-										</div>
-									</li>
-									<li class="photography">
-										<div class="entry arlo_tm_portfolio_animation_wrap" data-title="Hivos Green Hackathon" data-category="Onsite">
-											<a href="portfolio-single-4.html">
-												<img src="img/portfolio/600x600.jpg" alt="" />
-												<div class="arlo_tm_portfolio_image_main" data-img-url="img/portfolio/4.jpg"></div>
-											</a>
-										</div>
-									</li>
-									<li class="design">
-										<div class="entry arlo_tm_portfolio_animation_wrap" data-title="FightNotFlight" data-category="Online">
-											<a href="portfolio-single-5.html">
-												<img src="img/portfolio/600x600.jpg" alt="" />
-												<div class="arlo_tm_portfolio_image_main" data-img-url="img/portfolio/1.jpg"></div>
-											</a>
-										</div>
-									</li>
-									<li class="photography">
-										<div class="entry arlo_tm_portfolio_animation_wrap" data-title="010 Innovation Hackathon" data-category="Onsite">
-											<a href="portfolio-single-6.html">
-												<img src="img/portfolio/600x600.jpg" alt="" />
-												<div class="arlo_tm_portfolio_image_main" data-img-url="img/portfolio/5.png"></div>
-											</a>
-										</div>
-									</li>
-									<li class="development">
-										<div class="entry arlo_tm_portfolio_animation_wrap" data-title="Huawei ICT Competition" data-category="Long-Term">
-											<a href="portfolio-single-7.html">
-												<img src="img/portfolio/600x600.jpg" alt="" />
-												<div class="arlo_tm_portfolio_image_main" data-img-url="img/portfolio/6.png"></div>
-											</a>
-										</div>
-									</li>
-									<li class="design">
-										<div class="entry arlo_tm_portfolio_animation_wrap" data-title="Oxford Digithon" data-category="Online">
-											<a href="portfolio-single-8.html">
-												<img src="img/portfolio/600x600.jpg" alt="" />
-												<div class="arlo_tm_portfolio_image_main" data-img-url="img/portfolio/3.png"></div>
-											</a>
-										</div>
-									</li>
-									<li class="photography">
-										<div class="entry arlo_tm_portfolio_animation_wrap" data-title="Dubai Commercity Hackathon" data-category="Onsite">
-											<a href="portfolio-single-9.html">
-												<img src="img/portfolio/600x600.jpg" alt="" />
-												<div class="arlo_tm_portfolio_image_main" data-img-url="img/portfolio/6.jpg"></div>
-											</a>
-										</div>
-									</li>
-									<li class="development">
-										<div class="entry arlo_tm_portfolio_animation_wrap" data-title="PyTorch Summer Hackathon" data-category="Long-Term">
-											<a href="portfolio-single-10.html">
-												<img src="img/portfolio/600x600.jpg" alt="" />
-												<div class="arlo_tm_portfolio_image_main" data-img-url="img/portfolio/7.png"></div>
-											</a>
-										</div>
-									</li>
-									<li class="design">
-										<div class="entry arlo_tm_portfolio_animation_wrap" data-title="Hack the Northeast" data-category="Online">
-											<a href="portfolio-single-11.html">
-												<img src="img/portfolio/600x600.jpg" alt="" />
-												<div class="arlo_tm_portfolio_image_main" data-img-url="img/portfolio/8.png"></div>
-											</a>
-										</div>
-									</li>
-									<li class="design">
-										<div class="entry arlo_tm_portfolio_animation_wrap" data-title="HackZurich" data-category="Online">
-											<a href="portfolio-single-12.html">
-												<img src="img/portfolio/600x600.jpg" alt="" />
-												<div class="arlo_tm_portfolio_image_main" data-img-url="img/portfolio/8.jpg"></div>
-												<li class="design">
-													<div class="entry arlo_tm_portfolio_animation_wrap" data-title="Junction Connected 2020" data-category="Online">
-														<a href="portfolio-single-12.html">
-															<img src="img/portfolio/600x600.jpg" alt="" />
-															<div class="arlo_tm_portfolio_image_main" data-img-url="img/portfolio/9.jpg"></div>
-											</a>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<!-- /PORTFOLIO FILTER -->
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Signet. AI consultancy by Mohamed Amr, Dubai.</span>
+    <span><a href="blog.html">Insights</a> &nbsp; <a href="https://www.linkedin.com/in/mamryehia/" rel="noopener" target="_blank">LinkedIn</a> &nbsp; <a href="https://github.com/MoAmrYehia" rel="noopener" target="_blank">GitHub</a> &nbsp; <a href="#top">Back to top</a></span>
+  </div>
+</footer>
 
-					</div>
-				</div>
-				<!-- /PORTFOLIO -->
+<script>
+/* ===== Settings ===== */
+/* Paste your Calendly event link here, e.g. 'https://calendly.com/your-name/30min'. Leave empty to show the placeholder. */
+var CALENDLY_URL = '';
 
-				<!-- TESTIMONIALS -->
-				<div class="arlo_tm_section" id="testimonials">
-					<div class="arlo_tm_testimonials_wrapper_all">
-						<div class="arlo_tm_universal_box_wrap">
-							<div class="bg_wrap">
-								<div class="overlay_image testimonial jarallax" data-speed="0"></div>
-								<div class="overlay_color testimonial"></div>
-							</div>
-							<div class="content testimonial">
-								<div class="arlo_tm_testimonial_wrap">
-									<div class="container">
-										<div class="carousel_wrap">
-											<ul class="owl-carousel">
-												<li class="item">
-													<div class="inner">
-														<div class="quotebox_wrap">
-															<i class="xcon-quote-left"></i>
-														</div>
-														<div class="definitions_wrap">
-															<p>“I was one of 45 collaborators from 27 countries, currently working on the Creedix Challenge for banking credit score design.”</p>
-														</div>
-														<div class="name_holder">
-															<p>Omdena, Jan. 2020 – Now</p>
-														</div>
-													</div>
-												</li>
-												<li class="item">
-													<div class="inner">
-														<div class="quotebox_wrap">
-															<i class="xcon-quote-left"></i>
-														</div>
-														<div class="definitions_wrap">
-															<p>“I worked on signal processing and cough data preparation. I am also responsible for architecting the ML pipeline.”</p>
-														</div>
-														<div class="name_holder">
-															<p>DetectNow, Mar. 2020 – Now</p>
-														</div>
-													</div>
-												</li>
-												<li class="item">
-													<div class="inner">
-														<div class="quotebox_wrap">
-															<i class="xcon-quote-left"></i>
-														</div>
-														<div class="definitions_wrap">
-															<p>“I worked on ML pipeline starting with data collection via web scraping, to Model Deployment using RESTful APIs.”</p>
-														</div>
-														<div class="name_holder">
-															<p>iNetworks, Jul. 2019 – Oct. 2019.</p>
-														</div>
-													</div>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /TESTIMONIALS -->
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-				<!-- COUNTERBOX -->
-				<div class="arlo_tm_section">
-					<div class="container">
-						<div class="arlo_tm_counter_wrap" data-col="4" data-delay="100">
-							<ul class="arlo_tm_counter_list arlo_tm_miniboxes">
-								<li>
-									<div class="inner arlo_tm_minibox">
-										<h3><span><span class="arlo_tm_counter" data-from="0" data-to="20" data-speed="1000">0</span></span></h3>
-										<span>Projects Completed</span>
-									</div>
-								</li>
-								<li>
-									<div class="inner arlo_tm_minibox">
-										<h3><span><span class="arlo_tm_counter" data-from="0" data-to="20000" data-speed="1500">0</span>+</span></h3>
-										<span>Lines of Code</span>
-									</div>
-								</li>
-								<li>
-									<div class="inner arlo_tm_minibox">
-										<h3><span><span class="arlo_tm_counter" data-from="0" data-to="52" data-speed="1000">0</span>+</span></h3>
-										<span>Hackathons</span>
-									</div>
-								</li>
-								<li>
-									<div class="inner arlo_tm_minibox">
-										<h3><span><span class="arlo_tm_counter" data-from="0" data-to="8" data-speed="700">0</span></span></h3>
-										<span>My Awwwards</span>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<!-- /COUNTERBOX -->
+  /* Header border on scroll */
+  var header = document.getElementById('siteHeader');
+  var onScroll = function(){ header.classList.toggle('scrolled', window.scrollY > 8); };
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
 
-				<!-- NEWS -->
-				<div class="arlo_tm_section" id="news">
-					<div class="arlo_tm_news_wrap">
-						<div class="container">
-							<div class="arlo_tm_title_holder news">
-								<h3>Latest News</h3>
-								<span>Check out DetectNow latest News</span>
-							</div>
-							<div class="arlo_tm_list_wrap blog_list">
-								<ul class="total">
-									<li class="wow fadeInUp" data-wow-duration="1.2s">
-										<div class="inner_list">
-											<div class="image_wrap">
-												<img class="small" src="img/blog/500x350.jpg" alt="" />
-												<img class="big" src="img/blog/1170x450.jpg" alt="" />
-												<div class="news_image" data-url="img/blog/1.jpg"></div>
-												<a class="link_news" href="index.html"></a>
-											</div>
-											<div class="definitions_wrap">
-												<div class="date_wrap">
-													<p>April 16, 2020 <a href="index.html">Forbes</a></p>
-												</div>
-												<div class="title_holder">
-													<h3><a href="index.html">The Hackathon Approach To COVID-19 Showcases Agile Innovation</a></h3>
-												</div>
-												<div class="definition">
-													<p>Cough detection: AI is leveraged to detect cough types ...</p>
-												</div>
-												<div class="full_def">
-													<p>Cough detection: AI is leveraged to detect cough types. Developed by the Detect Now team at CodeVsCovid19 Zurich, the idea is for users to record their coughing sound through a simple web interface and see if it can be diagnosed.</p>
-												</div>
-												<div class="arlo_tm_popup_share_wrap">
-													<ul>
-														<li><a href="https://www.linkedin.com/company/detectnow/" target="_blank">Linkedin</a></li>
-														<li><a href="https://devpost.com/software/detect-now" target="_blank">Devpost</a></li>
-														<li><a href="https://www.forbes.com/sites/tomokoyokoi/2020/04/16/the-hackathon-approach-to-covid-19-showcases-agile-innovation-at-its-best/#28d4ccc91e0c" target="_blank">Full Article</a></li>
-													</ul>
-												</div>
-												<div class="read_more">
-													<a href="#"><span>Read More</span></a>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s">
-										<div class="inner_list">
-											<div class="image_wrap">
-												<img class="small" src="img/blog/500x350.jpg" alt="" />
-												<img class="big" src="img/blog/1170x450.jpg" alt="" />
-												<div class="news_image" data-url="img/blog/2.png"></div>
-												<a class="link_news" href="index.html"></a>
-											</div>
-											<div class="definitions_wrap">
-												<div class="date_wrap">
-													<p>April 07, 2020 <a href="index.html">CNNMoney Switzerland</a></p>
-												</div>
-												<div class="title_holder">
-													<h3><a href="index.html">Interview with CNNMoney</a></h3>
-												</div>
-												<div class="definition">
-													<p>Ever imagine being able to test for COVID-19 by just coughing into your smartphone? ...</p>
-												</div>
-												<div class="full_def">
-													<p>Ever imagine being able to test for COVID-19 by just coughing into your smartphone? According to Simon Hofer, co-founder of the application Detect-Now, the possibility of doing just this and more is potentially weeks away. </p>
-												</div>
-												<div class="arlo_tm_popup_share_wrap">
-													<ul>
-														<li><a href="https://www.linkedin.com/company/detectnow/" target="_blank">Linkedin</a></li>
-														<li><a href="https://devpost.com/software/detect-now" target="_blank">Devpost</a></li>
-														<li><a href="https://www.linkedin.com/posts/cnnmoney-switzerland_ever-imagine-being-able-to-test-for-covid-ugcPost-6653562295983063041-pL3-/" target="_blank">Full Article</a></li>
-													</ul>
-												</div>
-												<div class="read_more">
-													<a href="#"><span>Read More</span></a>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.4s">
-										<div class="inner_list">
-											<div class="image_wrap">
-												<img class="small" src="img/blog/500x350.jpg" alt="" />
-												<img class="big" src="img/blog/1170x450.jpg" alt="" />
-												<div class="news_image" data-url="img/blog/3.png"></div>
-												<a class="link_news" href="index.html"></a>
-											</div>
-											<div class="definitions_wrap">
-												<div class="date_wrap">
-													<p>May 14, 2020 <a href="index.html">National Incubation Center</a></p>
-												</div>
-												<div class="title_holder">
-													<h3><a href="index.html">National Health Hackathon - Winners</a></h3>
-												</div>
-												<div class="definition">
-													<p>Two of our winners from the National Health Hackathon were invited to HUM News for an interview ...</p>
-												</div>
-												<div class="full_def">
-													<p>Two of our winners from the National Health Hackathon were invited to HUM News for an interview. Muhammad Zeeshan Karamat from #DetectNow and Urooj Zia from #MahulMate talked about their products and how they are working to control the spread of COVID-19 and other communicable diseases.</p>
-												</div>
-												<div class="arlo_tm_popup_share_wrap">
-													<ul>
-														<li><a href="https://www.linkedin.com/company/detectnow/" target="_blank">Linkedin</a></li>
-														<li><a href="https://devpost.com/software/detect-now" target="_blank">Devpost</a></li>
-														<li><a href="https://www.facebook.com/watch/?v=307979143523449" target="_blank">Full Article</a></li>
-													</ul>
-												</div>
-												<div class="read_more">
-													<a href="#"><span>Read More</span></a>
-												</div>
-											</div>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /NEWS -->
+  /* Scroll reveal */
+  var items = document.querySelectorAll('.reveal');
+  if (!reduce && 'IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {rootMargin:'0px 0px -10% 0px', threshold:.08});
+    items.forEach(function(el){ io.observe(el); });
+  } else {
+    items.forEach(function(el){ el.classList.add('in'); });
+  }
 
-				<!-- CONTACT & FOOTER -->
-				<div class="arlo_tm_section" id="contact">
-					<div class="container">
-						<div class="arlo_tm_title_holder contact">
-							<h3>Contact Me</h3>
-							<span>Get in touch with me</span>
-						</div>
-					</div>
-					<div class="arlo_tm_footer_contact_wrapper_all">
-						<div class="arlo_tm_contact_wrap_all">
-							<div class="container">
-								<div class="leftbox">
-									<div class="arlo_tm_mini_title_holder contact">
-										<h4>Get in Touch</h4>
-									</div>
-									<div class="short_info_wrap">
-										<ul>
-											<li><p><label>Address:</label><span>18 Gamal Abdel Nasser st, New Cairo, Egypt</span></p></li>
-											<li><p><label>Email:</label><span><a href="m.amryehia@gmail.com">m.amryehia@gmail.com</a></span></p></li>
-											<li><p><label>Phone:</label><span>+20 1099 099 162</span></p></li>
-											<li><p><label>Website:</label><span><a href="mailto:example@gmail.com">mohamed-resume.tech</a></span></p></li>
-										</ul>
-									</div>
-								</div>
-								<div class="rightbox">
-									<div class="arlo_tm_contact_wrap">
-										<div class="main_input_wrap">
-											<form action="/" method="post" class="contact_form" id="contact_form">
-												<div class="returnmessage" data-success="Your message has been received, We will contact you soon."></div>
-												<div class="empty_notice"><span>Please Fill Required Fields</span></div>
-												<div class="wrap">
-													<input id="name" type="text" placeholder="Your Name">
-												</div>
-												<div class="wrap">
-													<input id="email" type="text" placeholder="Your Email">
-												</div>
-												<div class="wrap">
-													<textarea id="message" placeholder="Your Message"></textarea>
-												</div>
-												<div class="arlo_tm_button">
-													<a id="send_message" href="#"><span>Send Message</span></a>
-												</div>
-											</form>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="arlo_tm_footer_wrap">
-							<div class="container">
-								<p>&copy; Copyright 2020. All Rights are Reserved.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /CONTACT & FOOTER -->
+  /* Calendly: loads only when a URL is set and the booking panel is near the viewport */
+  if (CALENDLY_URL){
+    var slot = document.getElementById('calSlot');
+    var loadCal = function(){
+      if (slot.dataset.loaded) return; slot.dataset.loaded = 1;
+      var sep = CALENDLY_URL.indexOf('?') > -1 ? '&' : '?';
+      var w = document.createElement('div');
+      w.className = 'calendly-inline-widget';
+      w.setAttribute('data-url', CALENDLY_URL + sep + 'hide_gdpr_banner=1&background_color=142036&text_color=e7ecf3&primary_color=5cc8c0');
+      slot.innerHTML = ''; slot.appendChild(w); slot.classList.add('live');
+      var s = document.createElement('script'); s.src = 'https://assets.calendly.com/assets/external/widget.js'; s.async = true;
+      document.body.appendChild(s);
+    };
+    if ('IntersectionObserver' in window){
+      var cio = new IntersectionObserver(function(en){ if (en[0].isIntersecting){ loadCal(); cio.disconnect(); } }, {rootMargin:'600px 0px'});
+      cio.observe(slot);
+    } else { loadCal(); }
+  }
 
-			</div>
-		</div>
-		<!-- /RIGHTPART -->
+  /* Hero specimen */
+  var docs = [
+    { tab:'Insurance', icon:'i-umbrella', title:'Motor claim note, received by email',
+      body:['Policyholder reports a rear collision on ',{t:'14 March 2026'},' at ',{t:'Sheikh Zayed Road, Dubai'},'. Policy ',{t:'MTR-20418-77'},'. Garage estimate ',{t:'AED 8,450'},'. Other driver ',{t:'may have been at fault',r:1},', police report to follow.'],
+      fields:[['incident_date','2026-03-14','0.98'],['location','Sheikh Zayed Rd','0.95'],['policy_no','MTR-20418-77','0.99'],['estimate_aed','8450','0.97'],['liability','third party?','0.61',1]] },
+    { tab:'Real estate', icon:'i-building', title:'Tenancy renewal request, scanned PDF',
+      body:['Tenant requests renewal of ',{t:'unit 1204, Marina Heights'},', Dubai Marina. New annual rent ',{t:'AED 102,000'},' from ',{t:'1 June 2026'},', contract ref. ',{t:'TC-2025-448193'},'. Landlord ',{t:'consent letter not attached',r:1},'.'],
+      fields:[['property_unit','1204, Marina Heights','0.97'],['annual_rent_aed','102000','0.98'],['start_date','2026-06-01','0.96'],['contract_ref','TC-2025-448193','0.94'],['landlord_consent','missing','0.52',1]] },
+    { tab:'Healthcare', icon:'i-health', title:'Sick leave certificate, clinic upload',
+      body:['Patient granted ',{t:'5 days'},' of sick leave starting ',{t:'21 September 2026'},' for ',{t:'acute gastroenteritis'},', coded ',{t:'A09'},'. Duration ',{t:'longer than typical for this code',r:1},'.'],
+      fields:[['leave_days','5','0.99'],['start_date','2026-09-21','0.98'],['diagnosis','acute gastroenteritis','0.95'],['icd10_code','A09','0.97'],['duration_check','above norm','0.64',1]] },
+    { tab:'Banking', icon:'i-card', title:'Salary certificate, account opening',
+      body:['This is to certify that the employee has worked as ',{t:'Operations Manager'},' since ',{t:'March 2021'},' with a gross monthly salary of ',{t:'AED 28,500'},', paid to account ending ',{t:'4417'},'. Company stamp present, ',{t:'signature partly illegible',r:1},'.'],
+      fields:[['job_title','Operations Manager','0.96'],['employed_since','2021-03','0.95'],['monthly_salary_aed','28500','0.99'],['account_last4','4417','0.98'],['signature_valid','uncertain','0.55',1]] }
+  ];
 
-		<a class="arlo_tm_totop" href="#"></a>
+  var fig = document.getElementById('specimen');
+  var tabsEl = document.getElementById('tabs');
+  var stage = document.getElementById('stage');
+  var docEl = document.getElementById('doc');
+  var titleEl = document.getElementById('docTitle');
+  var bodyEl = document.getElementById('docBody');
+  var recordEl = document.getElementById('record');
+  var CYCLE = 7000;
+  var idx = 0, timers = [], cycleTimer = null, hoverTimer = null, paused = false;
+  var btns = [];
 
-	</div>
-</div>
-<!-- / WRAPPER ALL -->
+  fig.style.setProperty('--cycle', CYCLE + 'ms');
 
-<!-- SCRIPTS -->
-<script src="js/jquery.js"></script>
-<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->
-<script src="js/plugins.js"></script>
-<script src="js/init.js"></script>
-<!-- /SCRIPTS -->
+  docs.forEach(function(d, i){
+    var b = document.createElement('button');
+    b.type = 'button'; b.className = 'tab';
+    b.setAttribute('aria-pressed', i === 0 ? 'true' : 'false');
+    b.innerHTML = '<svg class="ico" aria-hidden="true"><use href="#' + d.icon + '"/></svg>' + d.tab;
+    /* Hover to switch, with a short intent delay so sweeping across tabs feels smooth */
+    b.addEventListener('mouseenter', function(){
+      clearTimeout(hoverTimer);
+      hoverTimer = setTimeout(function(){ if (i !== idx) show(i, 'hover'); }, 70);
+    });
+    b.addEventListener('mouseleave', function(){ clearTimeout(hoverTimer); });
+    b.addEventListener('click', function(){ if (i !== idx) show(i, 'user'); });
+    b.addEventListener('focus', function(){ if (i !== idx && b.matches(':focus-visible')) show(i, 'user'); });
+    b.addEventListener('keydown', function(e){
+      var n = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+      if (n){ e.preventDefault(); btns[(i + n + btns.length) % btns.length].focus(); }
+    });
+    tabsEl.appendChild(b); btns.push(b);
+  });
+  var indicator = document.createElement('span');
+  indicator.className = 'indicator'; indicator.innerHTML = '<i></i>';
+  tabsEl.appendChild(indicator);
+  var fillEl = indicator.firstChild;
 
+  function moveIndicator(){
+    var b = btns[idx];
+    indicator.style.width = b.offsetWidth + 'px';
+    indicator.style.transform = 'translateX(' + b.offsetLeft + 'px)';
+  }
+  function restartFill(){
+    fillEl.classList.remove('run'); void fillEl.offsetWidth;
+    if (!reduce && !paused) fillEl.classList.add('run');
+  }
+  window.addEventListener('resize', moveIndicator);
+
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+
+  function render(d){
+    titleEl.textContent = d.title;
+    bodyEl.innerHTML = d.body.map(function(p){
+      return typeof p === 'string' ? esc(p) : '<span class="hl' + (p.r ? ' review' : '') + '">' + esc(p.t) + '</span>';
+    }).join('');
+    recordEl.innerHTML = '<div class="record-head"><span>Structured record</span><span>Confidence</span></div>' +
+      d.fields.map(function(f){
+        return '<div class="field' + (f[3] ? ' needs' : '') + '"><span class="k">' + esc(f[0]) + '</span><span class="v">' + esc(f[1]) + '</span><span class="c">' + esc(f[2]) + '</span></div>';
+      }).join('');
+    fig.setAttribute('aria-label', 'Example: ' + d.title + ' turned into a structured record');
+  }
+
+  function clearTimers(){ timers.forEach(clearTimeout); timers = []; clearTimeout(cycleTimer); }
+
+  function play(fast){
+    var hls = bodyEl.querySelectorAll('.hl');
+    var fields = recordEl.querySelectorAll('.field');
+    if (reduce){
+      hls.forEach(function(h){ h.classList.add('on'); });
+      fields.forEach(function(f){ f.classList.add('on'); });
+      return;
+    }
+    docEl.classList.remove('scanning', 'quick'); void docEl.offsetWidth;
+    docEl.classList.add('scanning'); if (fast) docEl.classList.add('quick');
+    var start = fast ? 220 : 700, step = fast ? 160 : 480;
+    hls.forEach(function(h, i){
+      timers.push(setTimeout(function(){ h.classList.add('on'); if (fields[i]) fields[i].classList.add('on'); }, start + i * step));
+    });
+  }
+
+  function setActive(i, scrollTabs){
+    btns.forEach(function(b, j){ b.setAttribute('aria-pressed', j === i ? 'true' : 'false'); });
+    moveIndicator();
+    if (scrollTabs && tabsEl.scrollWidth > tabsEl.clientWidth){
+      tabsEl.scrollTo({left: Math.max(0, btns[i].offsetLeft - 24), behavior: reduce ? 'auto' : 'smooth'});
+    }
+  }
+
+  function schedule(){
+    clearTimeout(cycleTimer);
+    if (reduce || paused) return;
+    cycleTimer = setTimeout(function(){ show((idx + 1) % docs.length, 'auto'); }, CYCLE);
+  }
+
+  function show(i, mode){
+    clearTimers();
+    idx = i; setActive(i, mode === 'auto');
+    var fast = mode === 'hover' || mode === 'user';
+    var fade = (reduce || mode === 'init') ? 0 : (fast ? 140 : 360);
+    stage.classList.toggle('fast', fast);
+    var swap = function(){ render(docs[i]); stage.classList.remove('out'); play(fast); restartFill(); schedule(); };
+    if (!fade){ swap(); return; }
+    stage.classList.add('out');
+    timers.push(setTimeout(swap, fade));
+  }
+
+  function pause(){ if (paused) return; paused = true; clearTimeout(cycleTimer); fillEl.classList.remove('run'); }
+  function resume(){ if (!paused) return; paused = false; restartFill(); schedule(); }
+  fig.addEventListener('mouseenter', pause);
+  fig.addEventListener('mouseleave', function(){ clearTimeout(hoverTimer); resume(); });
+  fig.addEventListener('focusin', pause);
+  fig.addEventListener('focusout', function(e){ if (!fig.contains(e.relatedTarget)) resume(); });
+
+  moveIndicator();
+  if (reduce){ setActive(0); return; }
+  if ('IntersectionObserver' in window){
+    new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){
+          if (!fig.dataset.started){ fig.dataset.started = 1; show(0, 'init'); }
+          else if (!fig.matches(':hover')) resume();
+        } else { pause(); }
+      });
+    }, {threshold:.3}).observe(fig);
+  } else {
+    show(0, 'init');
+  }
+})();
+</script>
 </body>
 </html>

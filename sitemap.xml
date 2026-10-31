@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://moamryehia.github.io/</loc>
+    <lastmod>2026-10-31</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://moamryehia.github.io/blog.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://moamryehia.github.io/blog/human-review-document-ai-from-day-one.html</loc>
+    <lastmod>2026-09-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://moamryehia.github.io/blog/questions-before-buying-enterprise-ai.html</loc>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+</urlset>
